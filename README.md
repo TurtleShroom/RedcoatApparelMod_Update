@@ -1,31 +1,44 @@
 # apparelmod
-Rimworld Apparel Mod
+Rimworld Redcoat Apparel Mod
 
 Contains the following items:
 
-#Debug
+Debug
   test item
-#OnSkin tops
-  Shirt and Waistcoat (stuffable)
-  Fancy Shirt and Waistcoat (stuffable)
-#Bottoms
+OnSkin tops
+  Shirt and Waistcoat (stuffable) (white sleeves with stuffable vest)
+  Fancy Shirt and Waistcoat (stuffable) (white sleeves with stuffable vest)
+Bottoms
   Breeches (stuffable)
   Fancy Breeches (stuffable)
-#Middle tops
+  Highlander Kilt (fixed texture)
+Middle tops
   Simple coat (stuffable)
   Fancy coat (stuffable)
-  ##Regimental coats
+  Regimental coats
     red/blue facings
     red/green facings
     red/white facings
     red/yellow facings
     (?) drummer stuff
     (maybe all stuffable but fixed texture)
-#Top tops
+Top tops
   Watch cloak
   Capote
+Hats
+  Cocked Hat (stuffable)
+  Cocked Hat (black)
+  Cocked Hat (black/white trim)
+  Bearskin
+  Fancy Hat (stuffable)
+  Garrison Caps
+    blue facings
+    green facings
+    white facings
+    yellow facings
+  Highlander Bonnet
 
-#Belts
+Belts
   Belly Box/Bayonet (stuffable)
   Belly Box/Bayonet (white)
   Cartridge Box/Waistbelt (stuffable)
