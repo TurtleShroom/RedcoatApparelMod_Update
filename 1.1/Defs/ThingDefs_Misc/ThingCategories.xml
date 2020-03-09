@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+    <defName>RCA_main</defName>
+    <label>18th century apparel</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_debug</defName>
+    <label>Debug</label>
+    <parent>RCA_main</parent>
+  </ThingCategoryDef>
+</Defs>
