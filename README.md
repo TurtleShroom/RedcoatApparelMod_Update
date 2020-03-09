@@ -1,0 +1,2 @@
+# apparelmod
+Rimworld Apparel Mod
