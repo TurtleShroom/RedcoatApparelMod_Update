@@ -1,62 +1,56 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingCategoryDef>
-    <defName>RCA_main</defName>
+    <defName>RCA_c_main</defName>
     <label>18th century apparel</label>
     <parent>Apparel</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_debug</defName>
+    <defName>RCA_c_debug</defName>
     <label>Debug</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_shirt</defName>
+    <defName>RCA_c_shirt</defName>
     <label>Shirts</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_bottom</defName>
+    <defName>RCA_c_bottom</defName>
     <label>Bottom</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_debug</defName>
-    <label>Debug</label>
-    <parent>RCA_main</parent>
-  </ThingCategoryDef>
-
-  <ThingCategoryDef>
-    <defName>RCA_coat</defName>
+    <defName>RCA_c_coat</defName>
     <label>Coats</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_regcoat</defName>
+    <defName>RCA_c_regcoat</defName>
     <label>Regimental Coats</label>
-    <parent>RCA_coat</parent>
+    <parent>RCA_c_coat</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_cloak</defName>
+    <defName>RCA_c_cloak</defName>
     <label>Cloaks</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_hats</defName>
+    <defName>RCA_c_hat</defName>
     <label>Hats</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_belts</defName>
+    <defName>RCA_c_belt</defName>
     <label>Accoutrements</label>
-    <parent>RCA_main</parent>
+    <parent>RCA_c_main</parent>
   </ThingCategoryDef>
 </Defs>

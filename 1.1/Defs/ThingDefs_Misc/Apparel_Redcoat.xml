@@ -11,7 +11,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
-      <li>RCA_debug</li>
+      <li>RCA_c_debug</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -40,17 +40,291 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-	     <Cloth>40</Cloth>
+      <Cloth>40</Cloth>
     </costList>
     <recipeMaker>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-			</recipeUsers>
-		</recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
   <!--Shirts-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_plainshirt</defName>
+    <label>shirt</label>
+    <description>A plain, but quite comfortable, cotton working shirt. It is rather uncultured to wear such close to skin clothing without anything covering it.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_shirt</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_plainshirtvest</defName>
+    <label>waistcoat and shirt</label>
+    <description>A plain, cotton working shirt, with a waistcoat on top. Common attire for the average person.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_shirt</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>4700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_fancyshirtvest</defName>
+    <label>fancy waistcoat and shirt</label>
+    <description>A fancy cotton shirt with ruffles, and an intricate waistcoat to go with it. Fit for anyone of higher standing or seeking to show their wealth.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_shirt</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>5700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <!--Breeches-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_breeches</defName>
+    <label>breeches</label>
+    <description>Simple breeches and stockings. Common attire worn in nearly all walks of life.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_bottom</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_fancybreeches</defName>
+    <label>fancy breeches</label>
+    <description>Intricate breeches and silk stockings. Meant to show status and wealth.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_bottom</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2200</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
 </Defs>
