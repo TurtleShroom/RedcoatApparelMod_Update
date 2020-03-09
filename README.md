@@ -1,21 +1,21 @@
 # apparelmod
 Rimworld Redcoat Apparel Mod
 
-Contains the following items:
+Probably the following items:
 
-Debug
+###Debug
 
   test item
 
 
-OnSkin tops
+###OnSkin tops
 
   Shirt and Waistcoat (stuffable) (white sleeves with stuffable vest)
 
   Fancy Shirt and Waistcoat (stuffable) (white sleeves with stuffable vest)
 
 
-Bottoms
+###Bottoms
 
   Breeches (stuffable)
 
@@ -24,13 +24,13 @@ Bottoms
   Highlander Kilt (fixed texture)
 
 
-Middle tops
+###Middle tops
 
   Simple coat (stuffable)
 
   Fancy coat (stuffable)
 
-  Regimental coats
+  ####Regimental coats
 
     red/blue facings
 
@@ -45,14 +45,14 @@ Middle tops
     (maybe all stuffable but fixed texture)
 
 
-Top tops
+###Top tops
 
   Watch cloak
 
   Capote
 
 
-Hats
+###Hats
 
   Cocked Hat (stuffable)
 
@@ -64,7 +64,7 @@ Hats
 
   Fancy Hat (stuffable)
 
-  Garrison Caps
+  ####Garrison Caps
 
     blue facings
 
@@ -77,7 +77,7 @@ Hats
   Highlander Bonnet
 
 
-Belts
+###Belts
 
   Belly Box/Bayonet (white)
 
