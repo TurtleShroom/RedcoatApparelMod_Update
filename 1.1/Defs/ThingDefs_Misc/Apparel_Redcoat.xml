@@ -422,4 +422,117 @@
     </statBases>
   </ThingDef>
 
+  <ThingDef Name="RCA_regcoat_base" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>RCA_c_regcoat</li>
+    </thingCategories>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2200</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Middle</li>
+      </layers>
+
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rb</defName>
+    <label>regimental coat (royal blue)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has royal blue facings, denoting it belongs to a royal regiment.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rg</defName>
+    <label>regimental coat (popinjay)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has light green facings. It smells faintly of burnt coastal towns...</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_ry</defName>
+    <label>regimental coat (yellow)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has yellow facings.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rw</defName>
+    <label>regimental coat (buff)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has buff white facings.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+
 </Defs>
