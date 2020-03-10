@@ -335,7 +335,7 @@
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>2200</WorkToMake>
+      <WorkToMake>2500</WorkToMake>
       <Mass>0.3</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
@@ -384,6 +384,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
+      <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
   </ThingDef>
@@ -397,7 +398,17 @@
       <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
     <apparel>
+      <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
     <statBases>
@@ -415,8 +426,13 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
+      <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leather</li>
+    </stuffCategories>
     <statBases>
       <WorkToMake>2500</WorkToMake>
     </statBases>
