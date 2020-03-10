@@ -194,6 +194,7 @@
         <li>Arms</li>
       </bodyPartGroups>
       <!--replace texture-->
+      <!--use texture mask-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
@@ -325,6 +326,100 @@
       </recipeUsers>
     </recipeMaker>
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <!--Coats-->
+  <ThingDef Name="RCA_coat_base" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>RCA_c_coat</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2200</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_coat</defName>
+    <label>coat</label>
+    <description>A simple coat for everyday use.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_fancycoat</defName>
+    <label>fancy coat</label>
+    <description>An intricate and fancy coat for formal use.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_huntingfrock</defName>
+    <label>hunting frock</label>
+    <description>A plain frock worn by backwoodsmen and hunters.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+    </apparel>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
   </ThingDef>
 
 </Defs>

@@ -9,9 +9,9 @@ Probably the following items:
 	test item
 
 ### OnSkin tops
-  shirt
-	shirt and Waistcoat (stuffable)
-	fancy Shirt and Waistcoat (stuffable)
+    shirt
+    shirt and Waistcoat (stuffable)
+    fancy Shirt and Waistcoat (stuffable)
 
 ### Bottoms
 	breeches (stuffable)
@@ -21,6 +21,7 @@ Probably the following items:
 ### Middle tops
 	simple coat (stuffable)
 	fancy coat (stuffable)
+	hunting frock (stuffable)
 
   #### Regimental coats
     red/blue facings
