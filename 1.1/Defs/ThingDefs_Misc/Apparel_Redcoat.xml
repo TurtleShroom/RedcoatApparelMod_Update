@@ -186,6 +186,10 @@
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.05</SocialImpact>
+      <TradePriceImprovement>.05</TradePriceImprovement>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -281,7 +285,7 @@
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancybreeches</defName>
     <label>fancy breeches</label>
-    <description>Intricate breeches and silk stockings. Meant to show status and wealth.</description>
+    <description>Intricate breeches and silk stockings. Meant to show off the status and wealth of the wearer.</description>
     <graphicData>
       <!--replace texture-->
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
@@ -299,6 +303,10 @@
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.03</SocialImpact>
+      <TradePriceImprovement>.03</TradePriceImprovement>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Legs</li>
@@ -336,7 +344,7 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>2500</WorkToMake>
-      <Mass>0.3</Mass>
+      <Mass>0.6</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
@@ -399,21 +407,17 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>3000</WorkToMake>
-      <Mass>0.3</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.10</SocialImpact>
+      <TradePriceImprovement>.08</TradePriceImprovement>
+
+    </equippedStatOffsets>
     <apparel>
       <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
-    <statBases>
-      <WorkToMake>2500</WorkToMake>
-    </statBases>
   </ThingDef>
 
   <ThingDef ParentName="RCA_coat_base">
@@ -431,8 +435,13 @@
     </apparel>
     <stuffCategories>
       <li>Fabric</li>
-      <li>Leather</li>
+      <li>Leathery</li>
     </stuffCategories>
+    <equippedStatOffsets>
+      <ForagedNutritionPerDay>4.00</ForagedNutritionPerDay>
+      <ShootingAccuracyPawn>.10</ShootingAccuracyPawn>
+
+    </equippedStatOffsets>
     <statBases>
       <WorkToMake>2500</WorkToMake>
     </statBases>
@@ -446,18 +455,26 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToMake>2200</WorkToMake>
-      <Mass>0.3</Mass>
+      <Mass>0.8</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
     </statBases>
 
+    <equippedStatOffsets>
+      <RangedWeapon_Cooldown>-0.2</RangedWeapon_Cooldown>
+      <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+      <PainShockThreshold>0.05</PainShockThreshold>
+
+    </equippedStatOffsets>
+
+
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
-    
+
     <apparel>
       <useWornGraphicMask>true</useWornGraphicMask>
 
@@ -548,6 +565,79 @@
     <apparel>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
+  </ThingDef>
+
+  <!--coats/shells-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_capote</defName>
+    <label>capote</label>
+    <description>Usually made of blankets, the capote is a large, thigh length overcoat, and allows for relative freedom of motion while keeping the wearer warm and comfy.</description>
+    <thingCategories>
+      <li>RCA_c_shell</li>
+    </thingCategories>
+    <techLevel>Neolithic</techLevel>
+
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.20</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+      <!--<PainShockThreshold>0.05</PainShockThreshold>-->
+
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</wornGraphicPath>
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Shell</li>
+      </layers>
+
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 
 

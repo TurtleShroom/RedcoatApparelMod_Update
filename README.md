@@ -42,6 +42,7 @@ Probably the following items:
 	bearskin
 	fancy Hat (stuffable)
 	highlander Bonnet
+	beaver fur hat
  #### Garrison Caps
     blue facings
     green facings

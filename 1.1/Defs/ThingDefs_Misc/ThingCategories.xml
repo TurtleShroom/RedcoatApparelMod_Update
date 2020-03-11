@@ -37,7 +37,7 @@
   </ThingCategoryDef>
 
   <ThingCategoryDef>
-    <defName>RCA_c_cloak</defName>
+    <defName>RCA_c_shell</defName>
     <label>Cloaks</label>
     <parent>RCA_c_main</parent>
   </ThingCategoryDef>
