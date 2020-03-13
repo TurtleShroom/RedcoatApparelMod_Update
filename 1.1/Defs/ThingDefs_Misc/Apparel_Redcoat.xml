@@ -311,6 +311,7 @@
     <apparel>
       <bodyPartGroups>
         <li>Legs</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <layers>
         <li>OnSkin</li>
@@ -828,8 +829,76 @@
 
     </apparel>
     <costList>
-      <Cloth>35</Cloth>
+      <Leather_Bear>35</Leather_Bear>
     </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_bearskinstuffable</defName>
+    <label>bearskin (stuffable)</label>
+    <description>It was supposed to be a tall, furry cap made of bearskin, but no, you had to make it out of whatever creature you murdered on the rim. You farb. Unless you actually made this with bear, then good job.</description>
+    <thingCategories>
+      <li>RCA_c_hat</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>0.8</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+      <PainShockThreshold>0.05</PainShockThreshold>
+      <SocialImpact>0.10</SocialImpact>
+
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <costStuffCount>35</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Overhead</li>
+      </layers>
+
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+
+    </apparel>
 
     <recipeMaker>
       <researchPrerequisite>ComplexClothing</researchPrerequisite>
