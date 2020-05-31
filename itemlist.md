@@ -5,8 +5,7 @@
     * 3 sides as simple coat, gold inlays + mask
 * hunting frock
   * 3 sides grayscale
-
-  #### Regimental coats
+* Regimental coats
   * 3 sides, red main color
     * blue facings
     * green facings
@@ -25,17 +24,15 @@
       * greyscale
       * black
 	  * black/white trim
-    - fancy Hat variation (stuffable)
-        - 3 sides as cocked hat, gold inlays + mask
-* bearskin
+    * fancy Hat variation (stuffable)
+        * 3 sides as cocked hat, gold inlays + mask
+* grenadier bearskin
     * 3 sides
       * gold texture
       * silver texture
-
 * beaver fur hat
-  - 3 sides greyscale
-
- #### Garrison Caps
+  * 3 sides greyscale
+* Garrison Caps
  -  3 sides
     - blue facings
     - green facings
