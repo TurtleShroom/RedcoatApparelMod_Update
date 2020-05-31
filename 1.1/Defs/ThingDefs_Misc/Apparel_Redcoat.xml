@@ -801,14 +801,14 @@
 
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+      <texPath>Things/Apparel/Headgear/bearskin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <apparel>
       <useWornGraphicMask>true</useWornGraphicMask>
       <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Headgear/bearskin</wornGraphicPath>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
