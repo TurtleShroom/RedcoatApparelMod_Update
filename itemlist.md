@@ -17,6 +17,7 @@ If you have any questions or doubts, ***don't be afraid to message me and ask***
 
 # OnSkin tops
   * shirt
+
     <img src="https://cdn.shopify.com/s/files/1/0050/1275/0447/products/Mens-Workshirt-White_SH-124_web2_P1750426_2400x.JPG?v=1571714812" height="500"/>
 
       * you can probably get away modifying vanilla stuff, but try to make it tidier and more volumous
@@ -25,6 +26,7 @@ If you have any questions or doubts, ***don't be afraid to message me and ask***
         * white
           *  this will be a plain white shirt in the end, no coloring later
   * shirt and Waistcoat (stuffable)
+
     <img src="https://cdn.shopify.com/s/files/1/0050/1275/0447/products/Sw-130_1770s-Waistcoat_Web_1200x1200_2019-06-06_JTS10145_2400x.JPG?v=1571714812" height="500"/>
     <img src="https://cdn.shopify.com/s/files/1/0050/1275/0447/products/1770s-mens-waistcoat-colored-canvas_sw-130_raw_p1750929_2400x.jpg?v=1571714812" height="500"/>
 
@@ -58,19 +60,24 @@ This would allow for stuff worn under it to be visible.
 * #### hunting frock (stuffable)
   <img src="https://i.pinimg.com/originals/30/70/81/30708154b54120c5566e019b9dce7591.jpg" height="400"/>
   <img src="https://i.pinimg.com/originals/4d/e0/59/4de059a05ba8cff4297cf87f50fb7209.jpg" height="400"/>
+
   * 3 sides
     * grayscale
 * #### Regimental coats
   * *please make the buttons a silver or neutral color (not gold/brass)*
   * 3 sides, red main color
     * blue facings
+
       <img src="http://gggodwin-com.3dcartstores.com/assets/images/britcoat3.jpg"/>
     * green facings (the specific rgb for this color is 166,194,56 but will probably need to be tweaked a little to account for "lighting" and wear)
+
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRiFJY39Jruqwml8-6bxhKPagoS5EVtXaEsPM6cN-USudtB_AV_&usqp=CAU" height="300"/>
 
     * white facings
+
       <img src="http://gggodwin-com.3dcartstores.com/assets/images/regimental9.jpg"/>
     * yellow facings
+
       <img src="http://gggodwin-com.3dcartstores.com/assets/images/regimental13.jpg"/>
 
     Note how these are all almost identical except for the colors on the lapels. Ignore the parts on the shoulders. These are laid out flat so there isn't an accurate form of how theyre worn. Refer to this instead; you can see that the sides start going outwards halfway up the chest.
@@ -84,11 +91,13 @@ This would allow for stuff worn under it to be visible.
 
 # Over tops
 * #### watch cloak (stuffable)
+
   <img src="https://cdn.shopify.com/s/files/1/0050/1275/0447/products/Watch-Cloak_MC-162_20180302-IMG_0317_1200x1200_Web_2400x.JPG?v=1571714808" height="500"/>
 
   * 3 sides
     * greyscale
 * #### capote
+
     <img src="https://i.pinimg.com/originals/4b/b9/1d/4bb91d3b43845a7d5765ca21fa704ca6.jpg" height="400"/>
     <img src="https://www.mackinacparks.com/wp-content/uploads/2016/12/von-Germann.jpg" height="600"/>
 
@@ -100,15 +109,18 @@ This would allow for stuff worn under it to be visible.
 
 # Hats
 * #### cocked Hat (stuffable)
+
   <img src="https://cdn.shopify.com/s/files/1/0050/1275/0447/products/mens-tricorn-brown_th-805_web_20170921-p1730764_2400x.jpg?v=1571714812" height="400"/>
 
     * 3 sides
       * greyscale, with some shading for the edge/ties on the front
       * black
+
       <img src="https://i.imgur.com/Ifu6BZJ.jpg" height=400/>
 
         * with a black ribbon
 	  * black/white trim
+
         <img src="http://gggodwin-com.3dcartstores.com/assets/images/hat1.jpg" />
 
         * with a **black** ribbon, keep the white trim and rope on the sides
@@ -117,6 +129,7 @@ This would allow for stuff worn under it to be visible.
 
   **NOTE:** the black and black/white hats should have the pointed corner over the left eye rather than centered on the head, the plain one should be centered
 * #### grenadier bearskin
+
   <img src="https://i.imgur.com/ukAgJOh.jpg" height=300/>
   <img src="https://i.imgur.com/WcSgm6G.jpg" height=300/>
   <img src="https://i.imgur.com/cI3xLWR.jpg" height=300/>
@@ -133,11 +146,13 @@ This would allow for stuff worn under it to be visible.
     * *maybe* add a small hint of brown to the fur (if it turns out kind of weird, then lets keep just black, but I'm curious as to the interim result)
     * otherwise perfect :)
 * #### beaver fur hat
+
   <img src="http://gggodwin-com.3dcartstores.com/assets/images/hat5.jpg"/>
   <img src="https://www.mackinacparks.com/wp-content/uploads/2016/12/von-Germann.jpg" height="600"/>
 
   * 3 sides fixed texture
 * #### Garrison Caps
+
   <img src="https://historicaltwiststore.com/images/product/10-215.jpg" height=300/>
   <img src="https://historicaltwiststore.com/images/product/10-215_01.jpg" height=300/>
 
