@@ -49,7 +49,7 @@ This would allow for stuff worn under it to be visible.
 
   <img src="https://i.pinimg.com/originals/75/44/5f/75445f73dcae69692d0e5c6f4ad33e98.jpg" height="500"/>
 
-  <img src="https://www.sutlers.co.uk/acatalog/18thbrown.jpg" height="500"/>
+  <img src="assets/18thbrown.jpg" height="500"/>
 
     * ignore the waistcoat and shirt and frills, those can be rendered by the shirt/waistcoat object itself
     * maybe add a little shading to buttons/lapel so they are a bit more distinct and visible?
