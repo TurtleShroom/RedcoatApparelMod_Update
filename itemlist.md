@@ -13,6 +13,8 @@ Rimworld's clothing layering system allows for multiple overlapping items to be 
 
 Rimworld doesn't allow for pants or sleeves, so don't worry about those.
 
+It also uses the same side texture for both the left and right perspectives in game, so if there is anything with a specific side texture (such as bearskin or forage cap), it will get mirrored. There is nothing that can really be done about this so it's totally fine for it to look mirrored, pretend it got flipped or something ¯\\\_(ツ)\_/¯
+
 If you have any questions or doubts, ***don't be afraid to message me and ask***. I would much rather you take your time on this, and ask twice and draw once.  
 
 # OnSkin tops
@@ -151,7 +153,7 @@ This would allow for stuff worn under it to be visible.
   <img src="https://www.mackinacparks.com/wp-content/uploads/2016/12/von-Germann.jpg" height="600"/>
 
   * 3 sides fixed texture
-* #### Garrison Caps
+* #### Forage Caps
 
   <img src="https://historicaltwiststore.com/images/product/10-215.jpg" height=300/>
   <img src="https://historicaltwiststore.com/images/product/10-215_01.jpg" height=300/>
