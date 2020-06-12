@@ -523,10 +523,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has royal blue facings, denoting it belongs to a royal regiment.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat_blue</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat_blue</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -536,10 +536,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has light green facings. It smells faintly of burnt coastal towns...</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat_green</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat_green</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -549,10 +549,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has yellow facings.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat_yellow</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat_yellow</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -562,10 +562,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has buff white facings.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat_white</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat_white</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -880,6 +880,75 @@
     <apparel>
       <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Overhead</li>
+      </layers>
+
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+
+    </apparel>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_beaverhat</defName>
+    <label>winter hat</label>
+    <description>A furry hat usually made of beaver pelts to brave frigid winters. Of course, nobody said it had to be made of beaver...</description>
+    <thingCategories>
+      <li>RCA_c_hat</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3500</WorkToMake>
+      <Mass>0.8</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+
+    <costStuffCount>35</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <equippedStatOffsets>
+      <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+      <PainShockThreshold>0.05</PainShockThreshold>
+      <!--<SocialImpact>0.10</SocialImpact>-->
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Headgear/beaverhat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Headgear/beaverhat</wornGraphicPath>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
