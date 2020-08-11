@@ -571,6 +571,78 @@
 
   <!--coats/shells-->
   <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_watchcloak</defName>
+    <label>watch cloak</label>
+    <description>A nice and comfy cloak, for keeping warm on cold nights on watch.</description>
+    <thingCategories>
+      <li>RCA_c_shell</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1.20</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+      <!--<PainShockThreshold>0.05</PainShockThreshold>-->
+
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/watchcloak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/watchcloak</wornGraphicPath>
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Shell</li>
+      </layers>
+
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Neolithic</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_capote</defName>
     <label>capote</label>
     <description>Usually made of blankets, the capote is a large, thigh length overcoat, and allows for relative freedom of motion while keeping the wearer warm and comfy.</description>

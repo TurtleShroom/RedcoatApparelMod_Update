@@ -121,13 +121,13 @@ This would allow for stuff worn under it to be visible.
 
       <img src="https://i.imgur.com/Ifu6BZJ.jpg" height=400/>
 
-        
+
       * black/white trim
       	* with a **black** ribbon, keep the white trim and rope on the sides
-	
+
       <img src="http://gggodwin-com.3dcartstores.com/assets/images/hat1.jpg" />
 
-        
+
     * ~~fancy Hat variation (stuffable)~~
         * ~~3 sides as cocked hat, gold inlays + mask~~
 
@@ -175,5 +175,5 @@ Give me a bit to decide as to how to have these done, I will update later
     - 3 sides fixed white textures
   - crossbelts
     - 3 sides fixed white textures
-  - waistbelt Box
-    - 3 sides fixed brown textures
+  - ~~waistbelt Box~~
+    - ~~3 sides fixed brown textures~~
