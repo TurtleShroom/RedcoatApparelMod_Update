@@ -423,17 +423,17 @@
   </ThingDef>
 
   <ThingDef ParentName="RCA_coat_base">
-    <defName>RCA_huntingfrock</defName>
+    <defName>RCA_huntfrock</defName>
     <label>hunting frock</label>
     <description>A plain frock worn by backwoodsmen and hunters.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/huntfrock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/huntfrock</wornGraphicPath>
     </apparel>
     <stuffCategories>
       <li>Fabric</li>
@@ -669,12 +669,14 @@
 
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>
+      <texPath>Things/Apparel/Clothing/capote</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/capote</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
 
       <bodyPartGroups>
         <li>Torso</li>
