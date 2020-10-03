@@ -53,68 +53,16 @@
   </ThingDef>
 
   <!--Shirts-->
-  <ThingDef ParentName="ApparelMakeableBase">
-    <defName>RCA_plainshirt</defName>
-    <label>shirt</label>
-    <description>A plain, but quite comfortable, cotton working shirt. It is rather uncultured to wear such close to skin clothing without anything covering it.</description>
-    <graphicData>
-      <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <thingCategories>
-      <li>RCA_c_shirt</li>
-    </thingCategories>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>2700</WorkToMake>
-      <Mass>0.3</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-    </statBases>
-    <apparel>
-      <bodyPartGroups>
-        <li>Torso</li>
-        <li>Neck</li>
-        <li>Shoulders</li>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
-      <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
-    </apparel>
-    <costList>
-      <Cloth>45</Cloth>
-    </costList>
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-      <recipeUsers Inherit="False">
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
-  </ThingDef>
-
+  <!--plain vest-->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_plainshirtvest</defName>
     <label>waistcoat and shirt</label>
     <description>A plain, cotton working shirt, with a waistcoat on top. Common attire for the average person.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <texPath>Things/Apparel/Clothing/waistcoat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <thingCategories>
       <li>RCA_c_shirt</li>
@@ -129,6 +77,7 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
@@ -136,7 +85,7 @@
         <li>Arms</li>
       </bodyPartGroups>
       <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoat</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
@@ -165,6 +114,7 @@
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
+  <!--fancy vest-->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancyshirtvest</defName>
     <label>fancy waistcoat and shirt</label>
@@ -339,6 +289,7 @@
   </ThingDef>
 
   <!--Coats-->
+  <!--base-->
   <ThingDef Name="RCA_coat_base" ParentName="ApparelMakeableBase" Abstract="True">
     <thingCategories>
       <li>RCA_c_coat</li>
@@ -384,6 +335,7 @@
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
+  <!--simple stuff-->
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_coat</defName>
     <label>coat</label>
@@ -399,6 +351,7 @@
     </apparel>
   </ThingDef>
 
+  <!--fancy-->
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_fancycoat</defName>
     <label>fancy coat</label>
@@ -422,6 +375,7 @@
     </apparel>
   </ThingDef>
 
+  <!--huntfrock-->
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_huntfrock</defName>
     <label>hunting frock</label>
@@ -449,6 +403,7 @@
     </statBases>
   </ThingDef>
 
+  <!--regcoat base-->
   <ThingDef Name="RCA_regcoat_base" ParentName="ApparelMakeableBase" Abstract="True">
     <thingCategories>
       <li>RCA_c_regcoat</li>
@@ -570,6 +525,7 @@
   </ThingDef>
 
   <!--coats/shells-->
+  <!--watchcloak-->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_watchcloak</defName>
     <label>watch cloak</label>
@@ -642,6 +598,7 @@
     </recipeMaker>
   </ThingDef>
 
+  <!--capote-->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_capote</defName>
     <label>capote</label>
@@ -763,13 +720,13 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
-
+  <!--chat stuff-->
   <ThingDef ParentName="CockedHatBase">
     <defName>RCA_stuffedhat</defName>
     <label>tricorn hat</label>
     <description>A tricorn hat, common and widespread on the colonial rim.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
+      <texPath>Things/Apparel/Headgear/chat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>25</costStuffCount>
@@ -778,278 +735,485 @@
       <li>Leathery</li>
     </stuffCategories>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Headgear/chat</wornGraphicPath>
     </apparel>
   </ThingDef>
-
+  <!--chat fancy-->
+  <!--
   <ThingDef ParentName="CockedHatBase">
-    <defName>RCA_fancystuffedhat</defName>
-    <label>fancy tricorn hat</label>
-    <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <statBases>
-      <WorkToMake>2500</WorkToMake>
-    </statBases>
-    <equippedStatOffsets>
-      <SocialImpact>.06</SocialImpact>
-      <TradePriceImprovement>.05</TradePriceImprovement>
-    </equippedStatOffsets>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
-    </apparel>
-  </ThingDef>
+  <defName>RCA_fancystuffedhat</defName>
+  <label>fancy tricorn hat</label>
+  <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
+  <graphicData>
+  <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
+  <graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<costStuffCount>25</costStuffCount>
+<statBases>
+<WorkToMake>2500</WorkToMake>
+</statBases>
+<equippedStatOffsets>
+<SocialImpact>.06</SocialImpact>
+<TradePriceImprovement>.05</TradePriceImprovement>
+</equippedStatOffsets>
+<stuffCategories>
+<li>Fabric</li>
+<li>Leathery</li>
+</stuffCategories>
+<apparel>
+<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
+</apparel>
+</ThingDef>
+-->
 
-  <ThingDef ParentName="CockedHatBase">
-    <defName>RCA_cockedhatblack</defName>
-    <label>cocked hat (no trim)</label>
-    <description>A military hat with a black cockade, used by British soldiers.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <apparel>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
-    </apparel>
-  </ThingDef>
+<!--chat black-->
+<ThingDef ParentName="CockedHatBase">
+  <defName>RCA_cockedhatblack</defName>
+  <label>cocked hat (no trim)</label>
+  <description>A military hat with a black cockade, used by British soldiers.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/chat_black</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/chat_black</wornGraphicPath>
+  </apparel>
+</ThingDef>
+<!--chat white-->
+<ThingDef ParentName="CockedHatBase">
+  <defName>RCA_cockedhatwhite</defName>
+  <label>cocked hat (white trim)</label>
+  <description>A military hat with a black cockade and white lace, used by British soldiers.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/chat_trim</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/chat_trim</wornGraphicPath>
+  </apparel>
+</ThingDef>
+<!--bearskin-->
+<ThingDef ParentName="ApparelMakeableBase">
+  <defName>RCA_bearskin</defName>
+  <label>bearskin</label>
+  <description>A tall, furry cap for grenadiers, musicians, and the like. Works well to intimidate and look sharp.</description>
+  <thingCategories>
+    <li>RCA_c_hat</li>
+  </thingCategories>
+  <techLevel>Industrial</techLevel>
 
-  <ThingDef ParentName="CockedHatBase">
-    <defName>RCA_cockedhatwhite</defName>
-    <label>cocked hat (white trim)</label>
-    <description>A military hat with a black cockade and white lace, used by British soldiers.</description>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <costStuffCount>25</costStuffCount>
-    <stuffCategories>
-      <li>Fabric</li>
-      <li>Leathery</li>
-    </stuffCategories>
-    <apparel>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
-    </apparel>
-  </ThingDef>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>3500</WorkToMake>
+    <Mass>0.8</Mass>
+    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>0.8</EquipDelay>
+  </statBases>
 
-  <ThingDef ParentName="ApparelMakeableBase">
-    <defName>RCA_bearskin</defName>
-    <label>bearskin</label>
-    <description>A tall, furry cap for grenadiers, musicians, and the like. Works well to intimidate and look sharp.</description>
-    <thingCategories>
-      <li>RCA_c_hat</li>
-    </thingCategories>
-    <techLevel>Industrial</techLevel>
+  <equippedStatOffsets>
+    <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+    <PainShockThreshold>0.05</PainShockThreshold>
+    <SocialImpact>0.10</SocialImpact>
 
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>3500</WorkToMake>
-      <Mass>0.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
+  </equippedStatOffsets>
 
-    <equippedStatOffsets>
-      <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
-      <PainShockThreshold>0.05</PainShockThreshold>
-      <SocialImpact>0.10</SocialImpact>
+  <graphicData>
+    <!--replace texture-->
+    <texPath>Things/Apparel/Headgear/bearskin</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <!--replace texture-->
+    <wornGraphicPath>Things/Apparel/Headgear/bearskin</wornGraphicPath>
+    <bodyPartGroups>
+      <li>UpperHead</li>
+    </bodyPartGroups>
 
-    </equippedStatOffsets>
+    <layers>
+      <li>Overhead</li>
+    </layers>
 
-    <graphicData>
-      <!--replace texture-->
-      <texPath>Things/Apparel/Headgear/bearskin</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <apparel>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Headgear/bearskin</wornGraphicPath>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
+    <tags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </tags>
 
-      <layers>
-        <li>Overhead</li>
-      </layers>
+    <defaultOutfitTags>
+      <li>Worker</li>
+      <li>Soldier</li>
+    </defaultOutfitTags>
 
-      <tags>
-        <li>IndustrialBasic</li>
-        <li>Neolithic</li>
-      </tags>
+  </apparel>
+  <costList>
+    <Leather_Bear>35</Leather_Bear>
+  </costList>
 
-      <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <recipeUsers Inherit="False">
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </recipeMaker>
+</ThingDef>
+<!--bearskin stuff (remove?)-->
+<ThingDef ParentName="ApparelMakeableBase">
+  <defName>RCA_bearskinstuffable</defName>
+  <label>bearskin (stuffable)</label>
+  <description>It was supposed to be a tall, furry cap made of bearskin, but no, you had to make it out of whatever creature you murdered on the rim. You farb. Unless you actually made this with bear, then good job.</description>
+  <thingCategories>
+    <li>RCA_c_hat</li>
+  </thingCategories>
+  <techLevel>Industrial</techLevel>
 
-    </apparel>
-    <costList>
-      <Leather_Bear>35</Leather_Bear>
-    </costList>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>3500</WorkToMake>
+    <Mass>0.8</Mass>
+    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>0.8</EquipDelay>
+  </statBases>
 
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-      <recipeUsers Inherit="False">
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+  <equippedStatOffsets>
+    <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+    <PainShockThreshold>0.05</PainShockThreshold>
+    <SocialImpact>0.10</SocialImpact>
 
-  <ThingDef ParentName="ApparelMakeableBase">
-    <defName>RCA_bearskinstuffable</defName>
-    <label>bearskin (stuffable)</label>
-    <description>It was supposed to be a tall, furry cap made of bearskin, but no, you had to make it out of whatever creature you murdered on the rim. You farb. Unless you actually made this with bear, then good job.</description>
-    <thingCategories>
-      <li>RCA_c_hat</li>
-    </thingCategories>
-    <techLevel>Industrial</techLevel>
+  </equippedStatOffsets>
 
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>3500</WorkToMake>
-      <Mass>0.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
+  <graphicData>
+    <!--replace texture-->
+    <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
 
-    <equippedStatOffsets>
-      <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
-      <PainShockThreshold>0.05</PainShockThreshold>
-      <SocialImpact>0.10</SocialImpact>
+  <costStuffCount>35</costStuffCount>
+  <stuffCategories>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <!--replace texture-->
+    <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
+    <bodyPartGroups>
+      <li>UpperHead</li>
+    </bodyPartGroups>
 
-    </equippedStatOffsets>
+    <layers>
+      <li>Overhead</li>
+    </layers>
 
-    <graphicData>
-      <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    <tags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </tags>
 
-    <costStuffCount>35</costStuffCount>
-    <stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
-    <apparel>
-      <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
+    <defaultOutfitTags>
+      <li>Worker</li>
+      <li>Soldier</li>
+    </defaultOutfitTags>
 
-      <layers>
-        <li>Overhead</li>
-      </layers>
+  </apparel>
 
-      <tags>
-        <li>IndustrialBasic</li>
-        <li>Neolithic</li>
-      </tags>
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <recipeUsers Inherit="False">
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </recipeMaker>
+</ThingDef>
+<!--beaver hat-->
+<ThingDef ParentName="ApparelMakeableBase">
+  <defName>RCA_beaverhat</defName>
+  <label>winter hat</label>
+  <description>A furry hat usually made of beaver pelts to brave frigid winters. Of course, nobody said it had to be made of beaver...</description>
+  <thingCategories>
+    <li>RCA_c_hat</li>
+  </thingCategories>
+  <techLevel>Industrial</techLevel>
 
-      <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>3500</WorkToMake>
+    <Mass>0.8</Mass>
+    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>0.8</EquipDelay>
+  </statBases>
 
-    </apparel>
+  <costStuffCount>35</costStuffCount>
+  <stuffCategories>
+    <li>Leathery</li>
+  </stuffCategories>
 
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-      <recipeUsers Inherit="False">
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+  <equippedStatOffsets>
+    <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+    <PainShockThreshold>0.05</PainShockThreshold>
+    <!--<SocialImpact>0.10</SocialImpact>-->
+  </equippedStatOffsets>
 
-  <ThingDef ParentName="ApparelMakeableBase">
-    <defName>RCA_beaverhat</defName>
-    <label>winter hat</label>
-    <description>A furry hat usually made of beaver pelts to brave frigid winters. Of course, nobody said it had to be made of beaver...</description>
-    <thingCategories>
-      <li>RCA_c_hat</li>
-    </thingCategories>
-    <techLevel>Industrial</techLevel>
+  <graphicData>
+    <!--replace texture-->
+    <texPath>Things/Apparel/Headgear/beaverhat</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <!--replace texture-->
+    <wornGraphicPath>Things/Apparel/Headgear/beaverhat</wornGraphicPath>
+    <bodyPartGroups>
+      <li>UpperHead</li>
+    </bodyPartGroups>
 
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>3500</WorkToMake>
-      <Mass>0.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.20</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.8</EquipDelay>
-    </statBases>
+    <layers>
+      <li>Overhead</li>
+    </layers>
 
-    <costStuffCount>35</costStuffCount>
-    <stuffCategories>
-      <li>Leathery</li>
-    </stuffCategories>
+    <tags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </tags>
 
-    <equippedStatOffsets>
-      <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
-      <PainShockThreshold>0.05</PainShockThreshold>
-      <!--<SocialImpact>0.10</SocialImpact>-->
-    </equippedStatOffsets>
+    <defaultOutfitTags>
+      <li>Worker</li>
+      <li>Soldier</li>
+    </defaultOutfitTags>
 
-    <graphicData>
-      <!--replace texture-->
-      <texPath>Things/Apparel/Headgear/beaverhat</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-    <apparel>
-      <useWornGraphicMask>true</useWornGraphicMask>
-      <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Headgear/beaverhat</wornGraphicPath>
-      <bodyPartGroups>
-        <li>UpperHead</li>
-      </bodyPartGroups>
+  </apparel>
 
-      <layers>
-        <li>Overhead</li>
-      </layers>
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <recipeUsers Inherit="False">
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </recipeMaker>
+</ThingDef>
 
-      <tags>
-        <li>IndustrialBasic</li>
-        <li>Neolithic</li>
-      </tags>
+<!--foragebase-->
+<ThingDef Name="ForageCapBase" ParentName="ApparelMakeableBase" Abstract="True">
+  <thingCategories>
+    <li>RCA_c_hat</li>
+  </thingCategories>
+  <techLevel>Industrial</techLevel>
 
-      <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>2000</WorkToMake>
+    <Mass>0.3</Mass>
+    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>.75</EquipDelay>
+  </statBases>
 
-    </apparel>
+  <equippedStatOffsets>
 
-    <recipeMaker>
-      <researchPrerequisite>ComplexClothing</researchPrerequisite>
-      <recipeUsers Inherit="False">
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-    </recipeMaker>
-  </ThingDef>
+    <SocialImpact>0.05</SocialImpact>
+    <ForagedNutritionPerDay>.15</ForagedNutritionPerDay>
+  </equippedStatOffsets>
+
+  <apparel>
+    <bodyPartGroups>
+      <li>UpperHead</li>
+    </bodyPartGroups>
+    <layers>
+      <li>Overhead</li>
+    </layers>
+    <tags>
+      <li>IndustrialBasic</li>
+      <li>Neolithic</li>
+    </tags>
+    <defaultOutfitTags>
+      <li>Worker</li>
+      <li>Soldier</li>
+    </defaultOutfitTags>
+  </apparel>
+
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <recipeUsers Inherit="False">
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </recipeMaker>
+</ThingDef>
+
+<!--forage blue-->
+<ThingDef ParentName="ForageCapBase">
+  <defName>RCA_fc_blue</defName>
+  <label>forage cap (blue)</label>
+  <description>A forage cap, comfy and used widely by soldiers performing menial tasks.This one has royal blue trim.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/fc_blue</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/fc_blue</wornGraphicPath>
+  </apparel>
+</ThingDef>
+
+<!--forage green-->
+<ThingDef ParentName="ForageCapBase">
+  <defName>RCA_fc_green</defName>
+  <label>forage cap (green)</label>
+  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has green trim.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/fc_green</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/fc_green</wornGraphicPath>
+  </apparel>
+</ThingDef>
+
+<!--forage white-->
+<ThingDef ParentName="ForageCapBase">
+  <defName>RCA_fc_white</defName>
+  <label>forage cap (white)</label>
+  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has buff trim.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/fc_white</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/fc_white</wornGraphicPath>
+  </apparel>
+</ThingDef>
+
+<!--forage yellow-->
+<ThingDef ParentName="ForageCapBase">
+  <defName>RCA_fc_yellow</defName>
+  <label>forage cap (yellow)</label>
+  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has yellow trim.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Headgear/fc_yellow</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+    <shaderType>CutoutComplex</shaderType>
+  </graphicData>
+  <costStuffCount>25</costStuffCount>
+  <stuffCategories>
+    <li>Fabric</li>
+    <li>Leathery</li>
+  </stuffCategories>
+  <apparel>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <wornGraphicPath>Things/Apparel/Headgear/fc_yellow</wornGraphicPath>
+  </apparel>
+</ThingDef>
+
+<!--belt-->
+<ThingDef ParentName="ApparelMakeableBase">
+  <defName>RCA_beltcboxdb</defName>
+  <label>belt cbox db</label>
+  <description>A simple test item. It shouldn't be stuffable and looks like a tshirt.</description>
+  <graphicData>
+    <texPath>Things/Apparel/Clothing/beltcbox</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+  </graphicData>
+  <thingCategories>
+    <li>RCA_c_debug</li>
+  </thingCategories>
+  <statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>1600</WorkToMake>
+    <Mass>0.25</Mass>
+    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>1.5</EquipDelay>
+  </statBases>
+  <apparel>
+    <bodyPartGroups>
+      <li>Waist</li>
+    </bodyPartGroups>
+    <wornGraphicPath>Things/Apparel/Clothing/beltcbox</wornGraphicPath>
+    <!--<wornGraphicData>
+      <renderUtilityAsPack>true</renderUtilityAsPack>
+      <east>
+        <offset>(-0.35,-0.05)</offset>
+        <thin><offset>(0.05,0)</offset></thin>
+        <hulk><offset>(-0.1,0)</offset></hulk>
+        <fat><offset>(-0.15,0)</offset></fat>
+      </east>
+      <west>
+        <offset>(0.35,-0.05)</offset>
+        <thin><offset>(-0.05,0)</offset></thin>
+        <hulk><offset>(0.1,0)</offset></hulk>
+        <fat><offset>(0.15,0)</offset></fat>
+      </west>
+      <male>  <scale>(0.75,0.75)</scale></male>
+      <female><scale>(0.75,0.75)</scale></female>
+      <thin>  <scale>(0.7,0.7)</scale></thin>
+      <hulk>  <scale>(0.9,0.9)</scale></hulk>
+      <fat>   <scale>(0.9,0.9)</scale></fat>
+    </wornGraphicData>-->
+    <layers>
+      <li>Shell</li>
+    </layers>
+    <tags>
+      <li>IndustrialBasic</li>
+    </tags>
+    <defaultOutfitTags>
+      <li>Worker</li>
+      <li>Soldier</li>
+    </defaultOutfitTags>
+  </apparel>
+  <costList>
+    <Cloth>40</Cloth>
+  </costList>
+  <recipeMaker>
+    <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    <recipeUsers Inherit="False">
+      <li>ElectricTailoringBench</li>
+      <li>HandTailoringBench</li>
+    </recipeUsers>
+  </recipeMaker>
+  <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+</ThingDef>
+
 
 </Defs>
