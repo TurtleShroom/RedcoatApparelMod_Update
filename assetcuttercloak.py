@@ -1,7 +1,7 @@
 import cv2
 from pathlib import Path
 pic_pool = [
-    Path(Path.cwd() / "orig assets/belt.png")
+    Path(Path.cwd() / "orig assets/Coat.png")
 ]
 writepath = Path(Path.cwd() / "1.2"/"Textures"/"Things"/"Apparel"/"Clothing")
 
@@ -34,7 +34,7 @@ for i in range(0,5):
             crop_img = orig_img[128*i:128*(i+1), 128*(j):128*(j+1)]
 
 
-            t_writepath = writepath/("belt"+"_"+size_pool[i]+"_"+orient_pool[j%3]+".png")
+            t_writepath = writepath/("coat"+"_"+size_pool[i]+"_"+orient_pool[j%3]+".png")
             print(t_writepath)
 
             cv2.imshow("crop", crop_img)

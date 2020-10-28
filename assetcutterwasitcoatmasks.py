@@ -1,7 +1,7 @@
 import cv2
 from pathlib import Path
 pic_pool = [
-    Path(Path.cwd() / "orig assets/wscfmmask.png")
+    Path(Path.cwd() / "orig assets/wscmask.png")
 ]
 writepath = Path(Path.cwd() / "1.2"/"Textures"/"Things"/"Apparel"/"Clothing")
 
@@ -28,13 +28,13 @@ orient_pool = [
 ]
 
 orig_img = cv2.imread(str(pic_pool[0]), cv2.IMREAD_UNCHANGED)
-for i in range(0,1):
+for i in range(0,5):
         for j in range(0,3):
 
             crop_img = orig_img[128*i:128*(i+1), 128*(j):128*(j+1)]
 
 
-            t_writepath = writepath/("waistcoat"+"_"+size_pool[3]+"_"+orient_pool[j%3]+"m.png")
+            t_writepath = writepath/("waistcoat"+"_"+size_pool[i]+"_"+orient_pool[j%3]+"m.png")
             print(t_writepath)
 
             cv2.imshow("crop", crop_img)

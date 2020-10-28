@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <!-- Extra layers (thank you CE)-->
+  <ApparelLayerDef>
+    <defName>Belt</defName>
+    <label>belt</label>
+    <drawOrder>210</drawOrder>
+  </ApparelLayerDef>
 
-  <!-- Test Debug Items-->
+  <!-- Test Debug Items -->
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_TestItem</defName>
     <label>test item</label>
@@ -342,12 +348,12 @@
     <description>A simple coat for everyday use.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/coat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/coat</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -1147,15 +1153,15 @@
 
 <!--belt-->
 <ThingDef ParentName="ApparelMakeableBase">
-  <defName>RCA_beltcboxdb</defName>
-  <label>belt cbox db</label>
-  <description>A simple test item. It shouldn't be stuffable and looks like a tshirt.</description>
+  <defName>RCA_beltcbox</defName>
+  <label>belt and cartridge box</label>
+  <description>A belt with bayonet and cartridge box. Handy for keeping stabby and shooty implements at hand.</description>
   <graphicData>
     <texPath>Things/Apparel/Clothing/beltcbox</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <thingCategories>
-    <li>RCA_c_debug</li>
+    <li>RCA_c_belt</li>
   </thingCategories>
   <statBases>
     <MaxHitPoints>100</MaxHitPoints>
@@ -1171,28 +1177,8 @@
       <li>Waist</li>
     </bodyPartGroups>
     <wornGraphicPath>Things/Apparel/Clothing/beltcbox</wornGraphicPath>
-    <!--<wornGraphicData>
-      <renderUtilityAsPack>true</renderUtilityAsPack>
-      <east>
-        <offset>(-0.35,-0.05)</offset>
-        <thin><offset>(0.05,0)</offset></thin>
-        <hulk><offset>(-0.1,0)</offset></hulk>
-        <fat><offset>(-0.15,0)</offset></fat>
-      </east>
-      <west>
-        <offset>(0.35,-0.05)</offset>
-        <thin><offset>(-0.05,0)</offset></thin>
-        <hulk><offset>(0.1,0)</offset></hulk>
-        <fat><offset>(0.15,0)</offset></fat>
-      </west>
-      <male>  <scale>(0.75,0.75)</scale></male>
-      <female><scale>(0.75,0.75)</scale></female>
-      <thin>  <scale>(0.7,0.7)</scale></thin>
-      <hulk>  <scale>(0.9,0.9)</scale></hulk>
-      <fat>   <scale>(0.9,0.9)</scale></fat>
-    </wornGraphicData>-->
     <layers>
-      <li>Shell</li>
+      <li>Belt</li>
     </layers>
     <tags>
       <li>IndustrialBasic</li>
