@@ -17,3 +17,5 @@ Hi, I made a mod. You can check it out here along with the Steam Workshop :) If 
 * Muskets (you should check out [Vanilla Weapons Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1814383360) for some cool muskets (no bayonets))
 * Appropriate hairstyles (did you know [Vanilla Hair Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=1888705256) has some period correct hair styles?)
 * Hair to show with hats ([Show Hair With Hats](https://steamcommunity.com/sharedfiles/filedetails/?id=1180826364) has got you covered to make those hats look neat with hair)
+
+Like what you see?
