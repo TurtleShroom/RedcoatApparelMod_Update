@@ -2,12 +2,13 @@
 <Defs>
   <!-- Extra layers (thank you CE)-->
   <ApparelLayerDef>
-    <defName>Belt</defName>
+    <defName>Beltthing</defName>
     <label>belt</label>
     <drawOrder>210</drawOrder>
   </ApparelLayerDef>
 
   <!-- Test Debug Items -->
+  <!--
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_TestItem</defName>
     <label>test item</label>
@@ -55,9 +56,8 @@
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
-
+-->
   <!--Shirts-->
   <!--plain vest-->
   <ThingDef ParentName="ApparelMakeableBase">
@@ -121,12 +121,12 @@
   </ThingDef>
 
   <!--fancy vest-->
+  <!--
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancyshirtvest</defName>
     <label>fancy waistcoat and shirt</label>
     <description>A fancy cotton shirt with ruffles, and an intricate waistcoat to go with it. Fit for anyone of higher standing or seeking to show their wealth.</description>
     <graphicData>
-      <!--replace texture-->
       <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -153,8 +153,6 @@
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <!--replace texture-->
-      <!--use texture mask-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
@@ -184,8 +182,8 @@
         <Crafting>8</Crafting>
       </skillRequirements>
     </recipeMaker>
-    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
+-->
 
   <!--Breeches-->
   <ThingDef ParentName="ApparelMakeableBase">
@@ -239,12 +237,12 @@
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
+<!--
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancybreeches</defName>
     <label>fancy breeches</label>
     <description>Intricate breeches, silk stockings, and fancy shoes. Meant to show off the status and wealth of the wearer.</description>
     <graphicData>
-      <!--replace texture-->
       <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -291,8 +289,8 @@
         <li>HandTailoringBench</li>
       </recipeUsers>
     </recipeMaker>
-    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
+-->
 
   <!--Coats-->
   <!--base-->
@@ -358,12 +356,12 @@
   </ThingDef>
 
   <!--fancy-->
+  <!--
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_fancycoat</defName>
     <label>fancy coat</label>
     <description>An intricate and fancy coat for formal use.</description>
     <graphicData>
-      <!--replace texture-->
       <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
@@ -376,10 +374,10 @@
 
     </equippedStatOffsets>
     <apparel>
-      <!--replace texture-->
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
     </apparel>
   </ThingDef>
+-->
 
   <!--huntfrock-->
   <ThingDef ParentName="RCA_coat_base">
@@ -880,74 +878,7 @@
     </recipeUsers>
   </recipeMaker>
 </ThingDef>
-<!--bearskin stuff (remove?)-->
-<ThingDef ParentName="ApparelMakeableBase">
-  <defName>RCA_bearskinstuffable</defName>
-  <label>bearskin (stuffable)</label>
-  <description>It was supposed to be a tall, furry cap made of bearskin, but no, you had to make it out of whatever creature you murdered on the rim. You farb. Unless you actually made this with bear, then good job.</description>
-  <thingCategories>
-    <li>RCA_c_hat</li>
-  </thingCategories>
-  <techLevel>Industrial</techLevel>
 
-  <statBases>
-    <MaxHitPoints>100</MaxHitPoints>
-    <WorkToMake>3500</WorkToMake>
-    <Mass>0.8</Mass>
-    <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-    <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
-    <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
-    <EquipDelay>0.8</EquipDelay>
-  </statBases>
-
-  <equippedStatOffsets>
-    <!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
-    <PainShockThreshold>0.05</PainShockThreshold>
-    <SocialImpact>0.10</SocialImpact>
-
-  </equippedStatOffsets>
-
-  <graphicData>
-    <!--replace texture-->
-    <texPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</texPath>
-    <graphicClass>Graphic_Single</graphicClass>
-  </graphicData>
-
-  <costStuffCount>35</costStuffCount>
-  <stuffCategories>
-    <li>Leathery</li>
-  </stuffCategories>
-  <apparel>
-    <!--replace texture-->
-    <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SimpleHelmet/SimpleHelmet</wornGraphicPath>
-    <bodyPartGroups>
-      <li>UpperHead</li>
-    </bodyPartGroups>
-
-    <layers>
-      <li>Overhead</li>
-    </layers>
-
-    <tags>
-      <li>IndustrialBasic</li>
-      <li>Neolithic</li>
-    </tags>
-
-    <defaultOutfitTags>
-      <li>Worker</li>
-      <li>Soldier</li>
-    </defaultOutfitTags>
-
-  </apparel>
-
-  <recipeMaker>
-    <researchPrerequisite>ComplexClothing</researchPrerequisite>
-    <recipeUsers Inherit="False">
-      <li>ElectricTailoringBench</li>
-      <li>HandTailoringBench</li>
-    </recipeUsers>
-  </recipeMaker>
-</ThingDef>
 <!--beaver hat-->
 <ThingDef ParentName="ApparelMakeableBase">
   <defName>RCA_beaverhat</defName>
@@ -1178,7 +1109,7 @@
     </bodyPartGroups>
     <wornGraphicPath>Things/Apparel/Clothing/beltcbox</wornGraphicPath>
     <layers>
-      <li>Belt</li>
+      <li>Beltthing</li>
     </layers>
     <tags>
       <li>IndustrialBasic</li>
