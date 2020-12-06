@@ -2,7 +2,7 @@
 <Defs>
   <!-- Extra layers (thank you CE)-->
   <ApparelLayerDef>
-    <defName>Beltthing</defName>
+    <defName>BeltSizeVar</defName>
     <label>belt</label>
     <drawOrder>210</drawOrder>
   </ApparelLayerDef>
@@ -66,7 +66,7 @@
     <description>A plain, cotton working shirt, with a waistcoat on top. Common attire for the average person.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/waistcoat</texPath>
+      <texPath>Things/Apparel/Clothing/waistcoat/waistcoat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -91,7 +91,7 @@
         <li>Arms</li>
       </bodyPartGroups>
       <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Clothing/waistcoat</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoat/waistcoat</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
@@ -346,12 +346,12 @@
     <description>A simple coat for everyday use.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/coat</texPath>
+      <texPath>Things/Apparel/Clothing/coat/coat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Clothing/coat</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/coat/coat</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -386,12 +386,12 @@
     <description>A plain frock worn by backwoodsmen and hunters.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/huntfrock</texPath>
+      <texPath>Things/Apparel/Clothing/huntfrock/huntfrock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Clothing/huntfrock</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/huntfrock/huntfrock</wornGraphicPath>
     </apparel>
     <stuffCategories>
       <li>Fabric</li>
@@ -482,10 +482,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has royal blue facings, denoting it belongs to a royal regiment.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/redcoat_blue</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_blue</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Apparel/Clothing/redcoat_blue</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_blue</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -495,10 +495,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has light green facings. It smells faintly of burnt coastal towns...</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/redcoat_green</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_green</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Apparel/Clothing/redcoat_green</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_green</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -508,10 +508,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has yellow facings.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/redcoat_yellow</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_yellow</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Apparel/Clothing/redcoat_yellow</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_yellow</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -521,10 +521,10 @@
     <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has buff white facings.</description>
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/redcoat_white</texPath>
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_white</texPath>
     </graphicData>
     <apparel>
-      <wornGraphicPath>Things/Apparel/Clothing/redcoat_white</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_white</wornGraphicPath>
     </apparel>
   </ThingDef>
 
@@ -557,12 +557,12 @@
 
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/watchcloak</texPath>
+      <texPath>Things/Apparel/Clothing/watchcloak/watchcloak</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Clothing/watchcloak</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/watchcloak/watchcloak</wornGraphicPath>
 
       <bodyPartGroups>
         <li>Torso</li>
@@ -630,13 +630,13 @@
 
     <graphicData>
       <!--replace texture-->
-      <texPath>Things/Apparel/Clothing/capote</texPath>
+      <texPath>Things/Apparel/Clothing/capote/capote</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <apparel>
       <!--replace texture-->
-      <wornGraphicPath>Things/Apparel/Clothing/capote</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/capote/capote</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
 
       <bodyPartGroups>
@@ -1088,7 +1088,7 @@
   <label>belt and cartridge box</label>
   <description>A belt with bayonet and cartridge box. Handy for keeping stabby and shooty implements at hand.</description>
   <graphicData>
-    <texPath>Things/Apparel/Clothing/beltcbox</texPath>
+    <texPath>Things/Apparel/Clothing/beltcbox/beltcbox</texPath>
     <graphicClass>Graphic_Single</graphicClass>
   </graphicData>
   <thingCategories>
@@ -1107,9 +1107,9 @@
     <bodyPartGroups>
       <li>Waist</li>
     </bodyPartGroups>
-    <wornGraphicPath>Things/Apparel/Clothing/beltcbox</wornGraphicPath>
+    <wornGraphicPath>Things/Apparel/Clothing/beltcbox/beltcbox</wornGraphicPath>
     <layers>
-      <li>Beltthing</li>
+      <li>BeltSizeVar</li>
     </layers>
     <tags>
       <li>IndustrialBasic</li>
