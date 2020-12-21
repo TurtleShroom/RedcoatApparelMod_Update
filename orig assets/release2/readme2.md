@@ -10,15 +10,13 @@ Fancy styled shirt/waistcoat
 * grayscale waistcoat
 * fancy inlays/design in gold/silver color (or whatever works best)
 * white shirt ruffles protruding on top of center of waistcoat
-*
-#### 3 sides * 5 body types
+*#### 3 sides * 5 body types
 
 ### Item 2
 Fancy Coat
 * grayscale coat
 * fancy inlays/design in gold/silver color (or whatever works best)
-*
-#### 3 sides * 5 body types
+*#### 3 sides * 5 body types
 
 ### Item 3
 ~~Fancy Hat~~
@@ -26,10 +24,10 @@ Fancy Coat
 * Let me do some more research on specifics, but bill me now
 * #### 3 sides
 
-### Item 4
-Red Sash
-* just a red silk fabric wrapped around
-* #### 3 sides * 5 body types
+~~ ### Item 4~~
+~Red Sash~~
+* ~~just a red silk fabric wrapped around~~
+* ~~#### 3 sides * 5 body types~~
 
 ### Examples
 
@@ -50,10 +48,3 @@ coat and waistcoat
 ![](https://emuseum.history.org/internal/media/dispatcher/166942/preview)
 
 ruffles in this one are very exaggerated, but kind of the rough idea
-
-![](./IMG_20180804_193032.jpg)
-
-
-![](./IMG_20180802_133812.jpg)
-
-some pictures of the sash, note that these are mirrored, so the tail should be on the right side of the texture
