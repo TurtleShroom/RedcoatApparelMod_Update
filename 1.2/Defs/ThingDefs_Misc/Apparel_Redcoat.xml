@@ -121,14 +121,15 @@
   </ThingDef>
 
   <!--fancy vest-->
-  <!--
+
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancyshirtvest</defName>
     <label>fancy waistcoat and shirt</label>
     <description>A fancy cotton shirt with ruffles, and an intricate waistcoat to go with it. Fit for anyone of higher standing or seeking to show their wealth.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <texPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <thingCategories>
       <li>RCA_c_shirt</li>
@@ -147,13 +148,14 @@
       <TradePriceImprovement>.05</TradePriceImprovement>
     </equippedStatOffsets>
     <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
@@ -183,7 +185,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
--->
+
 
   <!--Breeches-->
   <ThingDef ParentName="ApparelMakeableBase">
@@ -356,14 +358,15 @@
   </ThingDef>
 
   <!--fancy-->
-  <!--
+
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_fancycoat</defName>
     <label>fancy coat</label>
     <description>An intricate and fancy coat for formal use.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/coatf/coatf</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <statBases>
       <WorkToMake>3000</WorkToMake>
@@ -374,7 +377,8 @@
 
     </equippedStatOffsets>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Clothing/coatf/coatf</wornGraphicPath>
     </apparel>
   </ThingDef>
 -->
@@ -743,32 +747,34 @@
     </apparel>
   </ThingDef>
   <!--chat fancy-->
-  <!--
+
   <ThingDef ParentName="CockedHatBase">
-  <defName>RCA_fancystuffedhat</defName>
-  <label>fancy tricorn hat</label>
-  <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
-  <graphicData>
-  <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
-  <graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<costStuffCount>25</costStuffCount>
-<statBases>
-<WorkToMake>2500</WorkToMake>
-</statBases>
-<equippedStatOffsets>
-<SocialImpact>.06</SocialImpact>
-<TradePriceImprovement>.05</TradePriceImprovement>
-</equippedStatOffsets>
-<stuffCategories>
-<li>Fabric</li>
-<li>Leathery</li>
-</stuffCategories>
-<apparel>
-<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
-</apparel>
-</ThingDef>
--->
+    <defName>RCA_fancystuffedhat</defName>
+    <label>fancy tricorn hat</label>
+    <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Headgear/hatf/hatf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.06</SocialImpact>
+      <TradePriceImprovement>.05</TradePriceImprovement>
+    </equippedStatOffsets>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Headgear/hatf/hatf</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
 
 <!--chat black-->
 <ThingDef ParentName="CockedHatBase">
