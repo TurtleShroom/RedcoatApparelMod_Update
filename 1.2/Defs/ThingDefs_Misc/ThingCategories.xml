@@ -31,6 +31,12 @@
   </ThingCategoryDef>
 
   <ThingCategoryDef>
+    <defName>RCA_c_fancy</defName>
+    <label>Formal</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
     <defName>RCA_c_regcoat</defName>
     <label>Regimental Coats</label>
     <parent>RCA_c_coat</parent>

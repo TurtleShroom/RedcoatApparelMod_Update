@@ -121,17 +121,18 @@
   </ThingDef>
 
   <!--fancy vest-->
-  <!--
+
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancyshirtvest</defName>
     <label>fancy waistcoat and shirt</label>
     <description>A fancy cotton shirt with ruffles, and an intricate waistcoat to go with it. Fit for anyone of higher standing or seeking to show their wealth.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
+      <texPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <thingCategories>
-      <li>RCA_c_shirt</li>
+      <li>RCA_c_fancy</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -147,18 +148,20 @@
       <TradePriceImprovement>.05</TradePriceImprovement>
     </equippedStatOffsets>
     <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -183,7 +186,7 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
--->
+
 
   <!--Breeches-->
   <ThingDef ParentName="ApparelMakeableBase">
@@ -237,7 +240,7 @@
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
-<!--
+
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancybreeches</defName>
     <label>fancy breeches</label>
@@ -247,7 +250,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
-      <li>RCA_c_bottom</li>
+      <li>RCA_c_fancy</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -271,7 +274,8 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -317,9 +321,7 @@
       <layers>
         <li>Middle</li>
       </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
+
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
@@ -350,20 +352,24 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
       <!--replace texture-->
       <wornGraphicPath>Things/Apparel/Clothing/coat/coat</wornGraphicPath>
     </apparel>
   </ThingDef>
 
   <!--fancy-->
-  <!--
+
   <ThingDef ParentName="RCA_coat_base">
     <defName>RCA_fancycoat</defName>
     <label>fancy coat</label>
     <description>An intricate and fancy coat for formal use.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</texPath>
+      <texPath>Things/Apparel/Clothing/coatf/coatf</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <statBases>
       <WorkToMake>3000</WorkToMake>
@@ -374,7 +380,12 @@
 
     </equippedStatOffsets>
     <apparel>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Jacket/Jacket</wornGraphicPath>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+      </tags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Clothing/coatf/coatf</wornGraphicPath>
     </apparel>
   </ThingDef>
 -->
@@ -578,7 +589,6 @@
 
       <tags>
         <li>IndustrialBasic</li>
-        <li>Neolithic</li>
       </tags>
 
       <defaultOutfitTags>
@@ -708,7 +718,6 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-        <li>Neolithic</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -739,36 +748,45 @@
       <li>Leathery</li>
     </stuffCategories>
     <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
       <wornGraphicPath>Things/Apparel/Headgear/chat</wornGraphicPath>
     </apparel>
   </ThingDef>
   <!--chat fancy-->
-  <!--
+
   <ThingDef ParentName="CockedHatBase">
-  <defName>RCA_fancystuffedhat</defName>
-  <label>fancy tricorn hat</label>
-  <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
-  <graphicData>
-  <texPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</texPath>
-  <graphicClass>Graphic_Single</graphicClass>
-</graphicData>
-<costStuffCount>25</costStuffCount>
-<statBases>
-<WorkToMake>2500</WorkToMake>
-</statBases>
-<equippedStatOffsets>
-<SocialImpact>.06</SocialImpact>
-<TradePriceImprovement>.05</TradePriceImprovement>
-</equippedStatOffsets>
-<stuffCategories>
-<li>Fabric</li>
-<li>Leathery</li>
-</stuffCategories>
-<apparel>
-<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CowboyHat/CowboyHat</wornGraphicPath>
-</apparel>
-</ThingDef>
--->
+    <defName>RCA_fancystuffedhat</defName>
+    <label>fancy tricorn hat</label>
+    <description>An intricately decorated tricorn hat, no status conscious gentleman is complete without one.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Headgear/hatf/hatf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.06</SocialImpact>
+      <TradePriceImprovement>.05</TradePriceImprovement>
+    </equippedStatOffsets>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+      </tags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Headgear/hatf/hatf</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
 
 <!--chat black-->
 <ThingDef ParentName="CockedHatBase">
@@ -786,6 +804,9 @@
     <li>Leathery</li>
   </stuffCategories>
   <apparel>
+    <tags>
+      <li>IndustrialBasic</li>
+    </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_black</wornGraphicPath>
   </apparel>
@@ -806,6 +827,9 @@
     <li>Leathery</li>
   </stuffCategories>
   <apparel>
+    <tags>
+      <li>IndustrialBasic</li>
+    </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_trim</wornGraphicPath>
   </apparel>
@@ -857,7 +881,6 @@
 
     <tags>
       <li>IndustrialBasic</li>
-      <li>Neolithic</li>
     </tags>
 
     <defaultOutfitTags>
@@ -981,7 +1004,6 @@
     </layers>
     <tags>
       <li>IndustrialBasic</li>
-      <li>Neolithic</li>
     </tags>
     <defaultOutfitTags>
       <li>Worker</li>
