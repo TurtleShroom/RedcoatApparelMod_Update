@@ -132,7 +132,7 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <thingCategories>
-      <li>RCA_c_shirt</li>
+      <li>RCA_c_fancy</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -160,7 +160,8 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -239,7 +240,7 @@
     <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
   </ThingDef>
 
-<!--
+
   <ThingDef ParentName="ApparelMakeableBase">
     <defName>RCA_fancybreeches</defName>
     <label>fancy breeches</label>
@@ -249,7 +250,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
-      <li>RCA_c_bottom</li>
+      <li>RCA_c_fancy</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -273,7 +274,8 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -319,9 +321,7 @@
       <layers>
         <li>Middle</li>
       </layers>
-      <tags>
-        <li>IndustrialBasic</li>
-      </tags>
+
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
@@ -352,6 +352,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
       <!--replace texture-->
       <wornGraphicPath>Things/Apparel/Clothing/coat/coat</wornGraphicPath>
     </apparel>
@@ -377,6 +380,10 @@
 
     </equippedStatOffsets>
     <apparel>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+      </tags>
       <useWornGraphicMask>true</useWornGraphicMask>
       <wornGraphicPath>Things/Apparel/Clothing/coatf/coatf</wornGraphicPath>
     </apparel>
@@ -582,7 +589,6 @@
 
       <tags>
         <li>IndustrialBasic</li>
-        <li>Neolithic</li>
       </tags>
 
       <defaultOutfitTags>
@@ -712,7 +718,6 @@
       </layers>
       <tags>
         <li>IndustrialBasic</li>
-        <li>Neolithic</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -743,6 +748,9 @@
       <li>Leathery</li>
     </stuffCategories>
     <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
       <wornGraphicPath>Things/Apparel/Headgear/chat</wornGraphicPath>
     </apparel>
   </ThingDef>
@@ -770,6 +778,10 @@
       <li>Leathery</li>
     </stuffCategories>
     <apparel>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+      </tags>
       <useWornGraphicMask>true</useWornGraphicMask>
       <wornGraphicPath>Things/Apparel/Headgear/hatf/hatf</wornGraphicPath>
     </apparel>
@@ -792,6 +804,9 @@
     <li>Leathery</li>
   </stuffCategories>
   <apparel>
+    <tags>
+      <li>IndustrialBasic</li>
+    </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_black</wornGraphicPath>
   </apparel>
@@ -812,6 +827,9 @@
     <li>Leathery</li>
   </stuffCategories>
   <apparel>
+    <tags>
+      <li>IndustrialBasic</li>
+    </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_trim</wornGraphicPath>
   </apparel>
@@ -863,7 +881,6 @@
 
     <tags>
       <li>IndustrialBasic</li>
-      <li>Neolithic</li>
     </tags>
 
     <defaultOutfitTags>
@@ -987,7 +1004,6 @@
     </layers>
     <tags>
       <li>IndustrialBasic</li>
-      <li>Neolithic</li>
     </tags>
     <defaultOutfitTags>
       <li>Worker</li>
