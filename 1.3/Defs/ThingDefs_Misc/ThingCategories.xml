@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+    <defName>RCA_c_main</defName>
+    <label>18th century apparel</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_debug</defName>
+    <label>Debug</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_shirt</defName>
+    <label>Shirts</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_bottom</defName>
+    <label>Bottom</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_coat</defName>
+    <label>Coats</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_fancy</defName>
+    <label>Formal</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_regcoat</defName>
+    <label>Regimental Coats</label>
+    <parent>RCA_c_coat</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_shell</defName>
+    <label>Cloaks</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_hat</defName>
+    <label>Hats</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_belt</defName>
+    <label>Accoutrements</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+</Defs>
