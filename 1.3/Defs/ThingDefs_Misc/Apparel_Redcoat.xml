@@ -96,7 +96,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -219,7 +219,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -353,7 +353,7 @@
     </graphicData>
     <apparel>
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
       <!--replace texture-->
       <wornGraphicPath>Things/Apparel/Clothing/coat/coat</wornGraphicPath>
@@ -463,7 +463,7 @@
       </layers>
 
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
 
       <defaultOutfitTags>
@@ -588,7 +588,7 @@
       </layers>
 
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
 
       <defaultOutfitTags>
@@ -662,8 +662,8 @@
       </layers>
 
       <tags>
-        <li>IndustrialBasic</li>
-        <li>Neolithic</li>
+        <!-- <li>IndustrialBasic</li>
+        <li>Neolithic</li> -->
       </tags>
 
       <defaultOutfitTags>
@@ -717,7 +717,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -749,7 +749,7 @@
     </stuffCategories>
     <apparel>
       <tags>
-        <li>IndustrialBasic</li>
+        <!-- <li>IndustrialBasic</li> -->
       </tags>
       <wornGraphicPath>Things/Apparel/Headgear/chat</wornGraphicPath>
     </apparel>
@@ -805,7 +805,7 @@
   </stuffCategories>
   <apparel>
     <tags>
-      <li>IndustrialBasic</li>
+      <!-- <li>IndustrialBasic</li> -->
     </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_black</wornGraphicPath>
@@ -828,7 +828,7 @@
   </stuffCategories>
   <apparel>
     <tags>
-      <li>IndustrialBasic</li>
+      <!-- <li>IndustrialBasic</li> -->
     </tags>
     <useWornGraphicMask>true</useWornGraphicMask>
     <wornGraphicPath>Things/Apparel/Headgear/chat_trim</wornGraphicPath>
@@ -880,7 +880,7 @@
     </layers>
 
     <tags>
-      <li>IndustrialBasic</li>
+      <!-- <li>IndustrialBasic</li> -->
     </tags>
 
     <defaultOutfitTags>
@@ -952,8 +952,8 @@
     </layers>
 
     <tags>
-      <li>IndustrialBasic</li>
-      <li>Neolithic</li>
+      <!-- <li>IndustrialBasic</li>
+      <li>Neolithic</li> -->
     </tags>
 
     <defaultOutfitTags>
@@ -1003,7 +1003,7 @@
       <li>Overhead</li>
     </layers>
     <tags>
-      <li>IndustrialBasic</li>
+      <!-- <li>IndustrialBasic</li> -->
     </tags>
     <defaultOutfitTags>
       <li>Worker</li>
@@ -1134,7 +1134,7 @@
       <li>BeltSizeVar</li>
     </layers>
     <tags>
-      <li>IndustrialBasic</li>
+      <!-- <li>IndustrialBasic</li> -->
     </tags>
     <defaultOutfitTags>
       <li>Worker</li>
