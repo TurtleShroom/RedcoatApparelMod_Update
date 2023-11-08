@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThingCategoryDef>
+    <defName>RCA_c_main</defName>
+    <label>eighteenth century apparel</label>
+    <parent>Apparel</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_debug</defName>
+    <label>Redcoat Apparel Debug</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_shirt</defName>
+    <label>Redcoat Apparel Shirts</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_bottom</defName>
+    <label>Redcoat Apparel Pants</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_coat</defName>
+    <label>Redcoat Apparel Coats</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_fancy</defName>
+    <label>Redcoat Apparel Formal</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_regcoat</defName>
+    <label>Redcoat Apparel Regimental Coats</label>
+    <parent>RCA_c_coat</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_shell</defName>
+    <label>Redcoat Apparel Cloaks</label>
+    <parent>RCA_c_coat</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_hat</defName>
+    <label>Redcoat Apparel Hats</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+
+  <ThingCategoryDef>
+    <defName>RCA_c_belt</defName>
+    <label>Redcoat Apparel Accoutrements</label>
+    <parent>RCA_c_main</parent>
+  </ThingCategoryDef>
+</Defs>
