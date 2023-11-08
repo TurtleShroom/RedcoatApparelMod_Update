@@ -1045,7 +1045,6 @@
 		<Mass>0.8</Mass>
 		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.37</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Cold>0.37</StuffEffectMultiplierInsulation_Cold>
 		<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>0.8</EquipDelay>
 	  </statBases>
