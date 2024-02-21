@@ -899,6 +899,9 @@
         <li>Worker</li>
         <li>Soldier</li>
       </defaultOutfitTags>
+	  <tags>
+		<li>Pirate</li>
+	  </tags>
     </apparel>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
