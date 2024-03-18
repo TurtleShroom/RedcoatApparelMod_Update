@@ -1,0 +1,1407 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Extra layers -->
+  <ApparelLayerDef>
+    <defName>RC_BeltSizeVar</defName>
+    <label>belt</label>
+    <drawOrder>210</drawOrder>
+  </ApparelLayerDef>
+
+  <!-- Test Debug Items -->
+  <!--
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_TestItem</defName>
+    <label>test item</label>
+    <description>A simple test item. It shouldn't be stuffable and looks like a tshirt.</description>
+	<techLevel>Medieval</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_debug</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+	-->
+
+  <!--Shirts-->
+  <!--plain vest-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_plainshirtvest</defName>
+    <label>waistcoat and shirt</label>
+    <description>A plain working shirt, with a waistcoat on top. Common attire for the average person.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/waistcoat/waistcoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_shirt</li>
+    </thingCategories>
+	<techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoat/waistcoat</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+		<li>IndustrialBasic</li>
+		<li>PoorPirate</li>
+		<li>NormalPirate</li>
+		<li>RWPWesternWear</li>
+		<li>CallOfCthulhu_Townsfolk</li>
+		<li>CallOfCthulhu_Thug</li>
+		<li>SK_Khan_Apparel_Tag</li>
+		<li>OniWear</li>
+		<li>Medieval</li>
+		<li>MedievalBasic</li>
+		<li>MedievalApparelBasic</li>
+		<li>RWPWesternWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>ST_BeetClothing</li>
+		<li>BeetWear</li>
+		<li>JeubWear</li>
+		<li>GoblinWear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+	<!-- This causes the game to create this shirt with ninety pieces of cloth... every... single... time... -->
+	<!--
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+	-->
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <!--fancy vest-->
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_fancyshirtvest</defName>
+    <label>fancy waistcoat and shirt</label>
+    <description>A fancy cotton shirt with ruffles, and an intricate waistcoat to go with it. Fit for anyone of higher standing or seeking to show their wealth.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_fancy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>3700</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.05</SocialImpact>
+      <TradePriceImprovement>.05</TradePriceImprovement>
+    </equippedStatOffsets>
+	<techLevel>Medieval</techLevel>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Apparel/Clothing/waistcoatf/waistcoatf</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+		<li>RichPirate</li>
+		<li>MedievalApparelNoble</li>
+		<li>RWPGentlemanWear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>45</Cloth>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+
+  <!--Breeches-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_breeches</defName>
+    <label>breeches</label>
+    <description>Simple breeches, stockings, and shoes. Common attire worn in nearly all walks of life.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_bottom</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+	  <MarketValue>19</MarketValue>
+    </statBases>
+	<techLevel>Medieval</techLevel>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+		<li>IndustrialBasic</li>
+		<li>IndustrialDecent</li>
+		<li>IndustrialAdvanced</li>
+		<li>IndustrialMilitary</li>
+		<li>PoorPirate</li>
+		<li>NormalPirate</li>
+		<li>Medieval</li>
+		<li>MedievalBasic</li>
+		<li>MedievalApparelBasic</li>
+		<li>RWPWesternWear</li>
+		<li>IndustrialBasic</li>
+		<li>mafia</li>
+		<li>SK_Khan_Apparel_Tag</li>
+		<li>Klan_apparel</li> <!-- We Dixies call them "britches", breeches is from where the word comes -->
+		<li>klan</li>
+		<li>JeubWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>GoblinWear</li>
+		<li>FrenchInfantryApparelBP</li>
+		<li>FrenchLightInfantryApparel</li>
+		<li>FrenchGreandierApparel</li>
+		<li>FrenchCuirassApparel</li>
+		<li>BritishInfantryApparel</li>
+		<li>PrussianLandwehrApparel</li>
+		<li>PrussianLineApparel</li>
+		<li>PrussiaCuirassierApparel</li>
+		<li>FrogmanWear</li>
+		<li>OniWear</li>
+		<li>Outlander</li>
+		<li>CallOfCthulhu_Townsfolk</li>
+		<li>CallOfCthulhu_Thug</li>
+		<li>CallOfCthulhu_JuniorDetective</li>
+		<li>CallOfCthulhu_Detective</li>
+		<li>CallOfCthulhu_Infantry</li>
+		<li>CallOfCthulhu_Rancher</li>
+		<li>CallOfCthulhu_Farmer</li>
+		<li>CallOfCthulhu_TownsfolkPolice</li>
+		<li>CallOfCthulhu_Angler</li>
+		<li>CallOfCthulhu_FrenziedCultist</li>
+		<li>RWPSheriff</li>
+		<li>RWPDeputySheriff</li>
+		<li>BarnieFife</li>
+		<li>RWPMarshalWear</li>
+		<li>Usa</li>
+		<li>WeebPants</li>
+		<li>AnimeProtagonist</li>
+		<li>mafia_tete</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+		<li>Slave</li>
+      </defaultOutfitTags>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+		<li>CraftingSpot</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_fancybreeches</defName>
+    <label>fancy breeches</label>
+    <description>Intricate breeches, silk stockings, and fancy shoes. Meant to show off the status and wealth of the wearer.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>RCA_c_fancy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.4</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.03</SocialImpact>
+      <TradePriceImprovement>.03</TradePriceImprovement>
+    </equippedStatOffsets>
+	<techLevel>Medieval</techLevel>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+			<li>Royal</li>
+			<li>RoyalTier1</li>
+			<li>RoyalTier2</li>
+			<li>RoyalTier3</li>
+			<li>MedievalApparelNoble</li>
+			<li>King</li>
+			<li>RichPirate</li>
+			<li>MedievalNoble</li>
+			<li>RWPGentlemanWear</li>
+			<li>RoyalTier4</li>
+			<li>RoyalTier5</li>
+			<li>RoyalTier6</li>
+			<li>RoyalTier7</li>
+			<li>JeubWear</li>
+			<li>ST_GnomeClothing</li>
+			<li>Officer</li>
+			<li>FrenchLineOfficerApparel</li>
+			<li>FrenchLineOfficerBicornApparel</li>
+			<li>FrenchGreandierOfficerBearskinApparel</li>
+			<li>FrenchCuirassApparel</li>
+			<li>BritishInfantryOfficerApparel</li>
+			<li>PrussianLandwehrApparel</li>
+			<li>PrussianLandwehrOff</li>
+			<li>FrogmanWear</li> <!-- Michigan J. Frog -->
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories Inherit="False">
+      <li>Fabric</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--Coats-->
+  <!--base-->
+  <ThingDef Name="RCA_coat_base" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>RCA_c_coat</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2500</WorkToMake>
+      <Mass>0.6</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.38</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.03</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+	<techLevel>Medieval</techLevel>
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <!--simple stuff-->
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_coat</defName>
+    <label>coat</label>
+    <description>A simple coat for everyday use.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/coat/coat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+		<li>Medieval</li>
+		<li>MedievalApparelBasic</li>
+		<li>MedievalBasic</li>
+		<li>RWPWesternWear</li>
+		<li>CallOfCthulhu_Townsfolk</li>
+		<li>CallOfCthulhu_Thug</li>
+		<li>PoorPirate</li>
+      </tags>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/coat/coat</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <!--fancy-->
+
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_fancycoat</defName>
+    <label>fancy coat</label>
+    <description>An intricate and fancy coat for formal use.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Clothing/coatf/coatf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>3000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>.10</SocialImpact>
+      <TradePriceImprovement>.08</TradePriceImprovement>
+    </equippedStatOffsets>
+	<techLevel>Medieval</techLevel>
+    <apparel>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+		<li>RoyalTier3</li>
+		<li>King</li>
+		<li>MedievalNoble</li>
+		<li>MedievalApparelNoble</li>
+		<li>Gnoble</li>
+		<li>BeetElite</li>
+		<li>Officer</li>
+      </tags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Clothing/coatf/coatf</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <!--huntfrock-->
+  <ThingDef ParentName="RCA_coat_base">
+    <defName>RCA_huntfrock</defName>
+    <label>hunting frock</label>
+    <description>A plain frock worn by woodsmen and hunters.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/huntfrock/huntfrock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/huntfrock/huntfrock</wornGraphicPath>
+	  <tags>
+		<li>Tribal</li>
+		<li>Medieval</li>
+		<li>Apparel_Viking</li>
+		<li>CallOfCthulhu_Lumberjack</li>
+		<li>CallOfCthulhu_Rancher</li>
+		<li>OniWear</li>
+	  </tags>
+    </apparel>
+	<techLevel>Neolithic</techLevel>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <equippedStatOffsets>
+      <ForagedNutritionPerDay>4.00</ForagedNutritionPerDay>
+      <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+  </ThingDef>
+
+  <!--regcoat base-->
+  <ThingDef Name="RCA_regcoat_base" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>RCA_c_regcoat</li>
+    </thingCategories>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2200</WorkToMake>
+      <Mass>0.8</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <RangedWeapon_Cooldown>-0.2</RangedWeapon_Cooldown>
+      <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+      <PainShockThreshold>0.05</PainShockThreshold>
+
+    </equippedStatOffsets>
+
+
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+
+	<techLevel>Medieval</techLevel>
+
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Middle</li>
+      </layers>
+
+      <tags>
+        <!-- <li>IndustrialBasic</li> -->
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+
+    <costStuffCount>45</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+	  <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <!--<colorGenerator Class="ColorGenerator_StandardApparel" />-->
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rb</defName>
+    <label>regimental coat (royal blue)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has royal blue facings, denoting it belongs to a royal regiment.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_blue</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_blue</wornGraphicPath>
+	  <tags>
+		<li>Royal</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier1</li>
+		<li>MedievalApparelNoble</li>
+		<li>RoyalTier3</li>
+		<li>RichPirate</li>
+		<li>RoyalTier4</li>
+		<li>RoyalTier5</li>
+		<li>RoyalTier6</li>
+		<li>RoyalTier7</li>
+		<li>BritishLineOfficerApparel</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rg</defName>
+    <label>regimental coat (popinjay)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has light green facings. It smells faintly of burnt coastal towns...</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_green</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_green</wornGraphicPath>
+	  <tags>
+		<li>BritishInfantryApparel</li>
+		<li>BritishLineInfantryApparel</li>
+	  </tags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_ry</defName>
+    <label>regimental coat (yellow)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has yellow facings.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_yellow</texPath>
+    </graphicData>
+    <apparel>
+     <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_yellow</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="RCA_regcoat_base">
+    <defName>RCA_regcoat_rw</defName>
+    <label>regimental coat (buff)</label>
+    <description>A British regimental coat, one is issued to every soldier on the sovereign's birthday. This one has buff white facings.</description>
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/redcoat/redcoat_white</texPath>
+    </graphicData>
+    <apparel>
+      <wornGraphicPath>Things/Apparel/Clothing/redcoat/redcoat_white</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+  <!--coats/shells-->
+  <!--watchcloak-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_watchcloak</defName>
+    <label>watch cloak</label>
+    <description>A nice and comfy cloak, for keeping warm on cold nights on watch.</description>
+    <thingCategories>
+      <li>RCA_c_shell</li>
+    </thingCategories>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+      <!--<PainShockThreshold>0.05</PainShockThreshold>-->
+
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/watchcloak/watchcloak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/watchcloak/watchcloak</wornGraphicPath>
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Shell</li>
+      </layers>
+
+      <tags>
+        <li>Medieval</li>
+		<li>MedievalApparelBasic</li>
+		<li>MedievalBasic</li>
+		<li>Barbarian</li>
+		<li>JeubWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>GoblinWear</li>
+		<li>FrenchInfantryApparelBP</li>
+		<li>FrenchLightInfantryApparel</li>
+		<li>FrenchGreandierApparel</li>
+		<li>FrenchCuirassApparel</li>
+		<li>BritishInfantryApparel</li>
+		<li>BritishLineInfantryApparel</li>
+		<li>PrussianLandwehrApparel</li>
+		<li>PrussianLineApparel</li>
+		<li>PrussiaCuirassierApparel</li>
+		<li>Cape</li>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>Apparel_Viking</li>
+		<li>OniWear</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+		<li>Slave</li>
+      </defaultOutfitTags>
+	  
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories Inherit="False">
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+		<li>CraftingSpot</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--capote-->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>RCA_capote</defName>
+    <label>capote</label>
+    <description>Usually made of blankets, the capote is a large, thigh length overcoat, and allows for relative freedom of motion while keeping the wearer warm and comfy.</description>
+    <thingCategories>
+      <li>RCA_c_shell</li>
+    </thingCategories>
+    <techLevel>Neolithic</techLevel>
+
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.2</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+      <!--<PainShockThreshold>0.05</PainShockThreshold>-->
+    </equippedStatOffsets>
+
+    <graphicData>
+      <!--replace texture-->
+      <texPath>Things/Apparel/Clothing/capote/capote</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <apparel>
+      <!--replace texture-->
+      <wornGraphicPath>Things/Apparel/Clothing/capote/capote</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+
+      <layers>
+        <li>Shell</li>
+      </layers>
+
+      <tags>
+        <li>Neolithic</li>
+		<li>Tribal</li>
+		<li>JeubWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>GoblinWear</li>
+		<li>FrenchInfantryApparelBP</li>
+		<li>FrenchLightInfantryApparel</li>
+		<li>FrenchGreandierApparel</li>
+		<li>FrenchCuirassApparel</li>
+		<li>BritishInfantryApparel</li>
+		<li>PrussianLandwehrApparel</li>
+		<li>PrussianLineApparel</li>
+		<li>PrussiaCuirassierApparel</li>
+      </tags>
+
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+		<li>Slave</li>
+      </defaultOutfitTags>
+	  
+	  <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    </apparel>
+
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories Inherit="False">
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+
+    <recipeMaker>
+      <!-- <researchPrerequisite>ComplexClothing</researchPrerequisite> -->
+      <recipeUsers Inherit="False">
+		<li>CraftingSpot</li>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <!--hats-->
+  <ThingDef Name="CockedHatBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <thingCategories>
+      <li>RCA_c_hat</li>
+    </thingCategories>
+    <techLevel>Medieval</techLevel>
+
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.3</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>.75</EquipDelay>
+    </statBases>
+
+    <equippedStatOffsets>
+
+      <SocialImpact>0.05</SocialImpact>
+    </equippedStatOffsets>
+
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <!-- <li>IndustrialBasic</li> -->
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+	  <tags>
+		<li>Pirate</li>
+	  </tags>
+    </apparel>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <!--chat stuff-->
+  <ThingDef ParentName="CockedHatBase">
+    <defName>RCA_stuffedhat</defName>
+    <label>tricorn hat</label>
+    <description>A tricorn hat, common and widespread on the colonial rim.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Headgear/chat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <apparel>
+      <tags>
+        <li>IndustrialBasic</li>
+		<li>Medieval</li>
+		<li>JeubWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>GoblinWear</li>
+		<li>ST_BeetClothing</li>
+		<li>PoorPirate</li>
+		<li>NormalPirate</li>
+		<li>Pirate</li>
+      </tags>
+      <wornGraphicPath>Things/Apparel/Headgear/chat</wornGraphicPath>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    </apparel>
+  </ThingDef>
+  <!--chat fancy-->
+
+  <ThingDef ParentName="CockedHatBase">
+    <defName>RCA_fancystuffedhat</defName>
+    <label>fancy tricorn hat</label>
+    <description>An intricately decorated tricorn hat, no status-conscious gentleman is complete without one.</description>
+    <graphicData>
+      <texPath>Things/Apparel/Headgear/hatf/hatf</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <statBases>
+      <WorkToMake>2500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.06</SocialImpact>
+      <TradePriceImprovement>0.05</TradePriceImprovement>
+    </equippedStatOffsets>
+    <stuffCategories Inherit="False">
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <tags>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier3</li>
+		<li>FrogmanWear</li>
+		<li>Officer</li>
+		<li>RichPirate</li>
+		<li>MedievalApparelNoble</li>
+      </tags>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <wornGraphicPath>Things/Apparel/Headgear/hatf/hatf</wornGraphicPath>
+    </apparel>
+  </ThingDef>
+
+
+	<!--chat black-->
+	<ThingDef ParentName="CockedHatBase">
+	  <defName>RCA_cockedhatblack</defName>
+	  <label>cocked hat (no trim)</label>
+	  <description>A military hat with a black cockade, used by British soldiers.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/chat_black</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<tags>
+		  <li>PoorPirate</li>
+		</tags>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/chat_black</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+	<!--chat white-->
+	<ThingDef ParentName="CockedHatBase">
+	  <defName>RCA_cockedhatwhite</defName>
+	  <label>cocked hat (white trim)</label>
+	  <description>A military hat with a black cockade and white lace, used by British soldiers.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/chat_trim</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<tags>
+			<li>MedievalApparelNoble</li>
+			<li>RichPirate</li>
+			<li>Royal</li>
+			<li>RoyalTier1</li>
+			<li>RoyalTier2</li>
+		</tags>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/chat_trim</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+	
+	<!--bearskin-->
+	<ThingDef ParentName="ApparelMakeableBase">
+	  <defName>RCA_bearskin</defName>
+	  <label>bearskin</label>
+	  <description>A tall, furry cap for grenadiers, musicians, and the like. Works well to intimidate and look sharp. While historically made out of actual bear pelts, the uneven dispersal of bears across the galaxy has neccesitated other leathers to be accepted.</description>
+	  <thingCategories>
+		<li>RCA_c_hat</li>
+	  </thingCategories>
+	  <techLevel>Medieval</techLevel>
+
+	  <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>3500</WorkToMake>
+		<Mass>0.8</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.37</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+	  </statBases>
+
+	  <equippedStatOffsets>
+		<!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+		<PainShockThreshold>0.05</PainShockThreshold>
+		<SocialImpact>0.10</SocialImpact>
+	  </equippedStatOffsets>
+
+	  <graphicData>
+		<!--replace texture-->
+		<texPath>Things/Apparel/Headgear/bearskin</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<!--replace texture-->
+		<wornGraphicPath>Things/Apparel/Headgear/bearskin</wornGraphicPath>
+		<bodyPartGroups>
+		  <li>UpperHead</li>
+		</bodyPartGroups>
+
+		<layers>
+		  <li>Overhead</li>
+		</layers>
+
+		<tags>
+		  <!-- <li>IndustrialBasic</li> -->
+		  <li>FrenchGreandierOfficerBearskinApparel</li>
+		</tags>
+
+		<defaultOutfitTags>
+		  <li>Soldier</li>
+		</defaultOutfitTags>
+
+	  </apparel>
+	  
+	  <costStuffCount>35</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  
+	  <!--
+	  <costList>
+		<Leather_Bear>35</Leather_Bear>
+	  </costList>
+	  -->
+
+	  <recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers Inherit="False">
+		  <li>ElectricTailoringBench</li>
+		  <li>HandTailoringBench</li>
+		</recipeUsers>
+	  </recipeMaker>
+	</ThingDef>
+
+	<!--beaver hat-->
+	<ThingDef ParentName="ApparelMakeableBase">
+	  <defName>RCA_beaverhat</defName>
+	  <label>winter hat</label>
+	  <description>A furry hat usually made of beaver pelts to brave frigid winters. Of course, nobody said it had to be made of beaver...</description>
+	  <thingCategories>
+		<li>RCA_c_hat</li>
+	  </thingCategories>
+	  <techLevel>Medieval</techLevel>
+
+	  <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>3500</WorkToMake>
+		<Mass>0.8</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.8</EquipDelay>
+	  </statBases>
+
+	  <costStuffCount>35</costStuffCount>
+	  <stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+	  </stuffCategories>
+
+	  <equippedStatOffsets>
+		<!--<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>-->
+		<PainShockThreshold>0.05</PainShockThreshold>
+		<!--<SocialImpact>0.10</SocialImpact>-->
+	  </equippedStatOffsets>
+
+	  <graphicData>
+		<!--replace texture-->
+		<texPath>Things/Apparel/Headgear/beaverhat</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<!--replace texture-->
+		<wornGraphicPath>Things/Apparel/Headgear/beaverhat</wornGraphicPath>
+		<bodyPartGroups>
+		  <li>UpperHead</li>
+		</bodyPartGroups>
+
+		<layers>
+		  <li>Overhead</li>
+		</layers>
+
+		<tags>
+		  <!--
+		  <li>IndustrialBasic</li>
+		  <li>Neolithic</li>
+		  -->
+		</tags>
+
+		<defaultOutfitTags>
+		  <li>Worker</li>
+		  <li>Soldier</li>
+		  <li>Slave</li>
+		</defaultOutfitTags>
+
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+	  </apparel>
+
+	  <recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers Inherit="False">
+		  <li>ElectricTailoringBench</li>
+		  <li>HandTailoringBench</li>
+		</recipeUsers>
+	  </recipeMaker>
+	</ThingDef>
+
+	<!--foragebase-->
+	<ThingDef Name="ForageCapBase" ParentName="ApparelMakeableBase" Abstract="True">
+	  <thingCategories>
+		<li>RCA_c_hat</li>
+	  </thingCategories>
+	  <techLevel>Medieval</techLevel>
+
+	  <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>2000</WorkToMake>
+		<Mass>0.3</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>.75</EquipDelay>
+	  </statBases>
+
+	  <equippedStatOffsets>
+
+		<SocialImpact>0.05</SocialImpact>
+		<ForagedNutritionPerDay>.15</ForagedNutritionPerDay>
+	  </equippedStatOffsets>
+
+	  <apparel>
+		<bodyPartGroups>
+		  <li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+		  <li>Overhead</li>
+		</layers>
+		<tags>
+		  <!-- <li>IndustrialBasic</li> -->
+		</tags>
+		<defaultOutfitTags>
+		  <li>Worker</li>
+		  <li>Slave</li>
+		</defaultOutfitTags>
+	  </apparel>
+
+	  <recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers Inherit="False">
+		  <li>ElectricTailoringBench</li>
+		  <li>HandTailoringBench</li>
+		</recipeUsers>
+	  </recipeMaker>
+	</ThingDef>
+
+	<!--forage blue-->
+	<ThingDef ParentName="ForageCapBase">
+	  <defName>RCA_fc_blue</defName>
+	  <label>forage cap (blue)</label>
+	  <description>A forage cap, comfy and used widely by soldiers performing menial tasks.This one has royal blue trim.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/fc_blue</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/fc_blue</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+
+	<!--forage green-->
+	<ThingDef ParentName="ForageCapBase">
+	  <defName>RCA_fc_green</defName>
+	  <label>forage cap (green)</label>
+	  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has green trim.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/fc_green</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/fc_green</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+
+	<!--forage white-->
+	<ThingDef ParentName="ForageCapBase">
+	  <defName>RCA_fc_white</defName>
+	  <label>forage cap (white)</label>
+	  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has buff trim.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/fc_white</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories>
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/fc_white</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+
+	<!--forage yellow-->
+	<ThingDef ParentName="ForageCapBase">
+	  <defName>RCA_fc_yellow</defName>
+	  <label>forage cap (yellow)</label>
+	  <description>A forage cap, comfy and used widely by soldiers performing menial tasks. This one has yellow trim.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Headgear/fc_yellow</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+	  </graphicData>
+	  <costStuffCount>25</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Fabric</li>
+		<li>Leathery</li>
+	  </stuffCategories>
+	  <apparel>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>Things/Apparel/Headgear/fc_yellow</wornGraphicPath>
+	  </apparel>
+	</ThingDef>
+
+	<!--belt-->
+	<ThingDef ParentName="ApparelMakeableBase">
+	  <defName>RCA_beltcbox</defName>
+	  <label>belt and cartridge box</label>
+	  <description>A belt with a bayonet and cartridge box. Handy for keeping stabbing and shooting implements at hand.</description>
+	  <graphicData>
+		<texPath>Things/Apparel/Clothing/beltcbox/beltcbox</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <thingCategories>
+		<li>RCA_c_belt</li>
+	  </thingCategories>
+	  <generateCommonality>0.45</generateCommonality>
+	  <statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>600</WorkToMake>
+		<Mass>0.025</Mass>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.022</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>0.5</EquipDelay>
+	  </statBases>
+	  <apparel>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<bodyPartGroups>
+		  <li>Waist</li>
+		</bodyPartGroups>
+		<wornGraphicPath>Things/Apparel/Clothing/beltcbox/beltcbox</wornGraphicPath>
+		<layers>
+		  <li>RC_BeltSizeVar</li>
+		</layers>
+		<tags>
+			<!-- <li>IndustrialBasic</li> -->
+			<!-- <li>IndustrialMilitary</li> -->
+			<li>RWPWesternWear</li>
+			<li>RWPBanditWear</li>
+			<li>RWPSheriff</li>
+			<li>RWPDeputySheriff</li>
+			<li>MedievalMilitary</li>
+			<li>FrenchInfantryApparelBP</li>
+			<li>FrenchLightInfantryApparel</li>
+			<li>FrenchGreandierApparel</li>
+			<li>FrenchCuirassApparel</li>
+			<li>BritishInfantryApparel</li>
+			<li>PrussianLandwehrApparel</li>
+			<li>PrussianLineApparel</li>
+			<li>PrussiaCuirassierApparel</li>
+			<li>FrenchLineOfficerApparel</li>
+			<li>FrenchLineOfficerBicornApparel</li>
+			<li>FrenchGreandierOfficerBearskinApparel</li>
+			<li>FrenchCuirassApparel</li>
+			<li>BritishInfantryOfficerApparel</li>
+			<li>PrussianLandwehrApparel</li>
+			<li>PrussianLandwehrOff</li>
+			<li>CallOfCthulhu_Detective</li>
+			<li>CallOfCthulhu_TownsfolkPolice</li>
+		</tags>
+		<defaultOutfitTags>
+		  <li>Soldier</li>
+		</defaultOutfitTags>
+	  </apparel>
+	  <techLevel>Medieval</techLevel>
+	  <costStuffCount>35</costStuffCount>
+	  <stuffCategories Inherit="False">
+		<li>Metallic</li>
+		<li>Stony</li>
+		
+		<!-- Mod support -->
+		<li MayRequire="TaosChagic.Igloo">Snowy</li>
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+		<li MayRequire="sarg.rimbees">RB_Waxy</li>
+	  </stuffCategories>
+	  <recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers Inherit="False">
+			<li>CraftingSpot</li>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+	  </recipeMaker>
+	  <equippedStatOffsets>
+		<AimingDelayFactor>-0.1</AimingDelayFactor>
+		<MeleeHitChance>0.2</MeleeHitChance>
+	  </equippedStatOffsets>
+	</ThingDef>
+</Defs>
