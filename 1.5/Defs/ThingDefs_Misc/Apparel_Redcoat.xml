@@ -899,9 +899,9 @@
         <li>Worker</li>
         <li>Soldier</li>
       </defaultOutfitTags>
-	  <tags>
+	  <!-- <tags>
 		<li>Pirate</li>
-	  </tags>
+	  </tags> -->
     </apparel>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
@@ -966,14 +966,14 @@
     </stuffCategories>
     <apparel>
       <tags>
-		<li>Royal</li>
-		<li>RoyalTier1</li>
-		<li>RoyalTier2</li>
-		<li>RoyalTier3</li>
-		<li>FrogmanWear</li>
-		<li>Officer</li>
-		<li>RichPirate</li>
-		<li>MedievalApparelNoble</li>
+        <li>Royal</li>
+        <li>RoyalTier1</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>FrogmanWear</li>
+        <li>Officer</li>
+        <li>RichPirate</li>
+        <li>MedievalApparelNoble</li>
       </tags>
       <useWornGraphicMask>true</useWornGraphicMask>
       <wornGraphicPath>Things/Apparel/Headgear/hatf/hatf</wornGraphicPath>
