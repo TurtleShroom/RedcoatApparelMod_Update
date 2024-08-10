@@ -290,13 +290,18 @@
 		<li>CallOfCthulhu_FrenziedCultist</li>
 		<li>RWPSheriff</li>
 		<li>RWPDeputySheriff</li>
-		<li>BarnieFife</li>
+		<li>RWPSheriffWear</li>
+		<li>RWPDeputySheriffWear</li>
 		<li>RWPMarshalWear</li>
+		<li>BarnieFife</li>
 		<li>Usa</li>
 		<li>WeebPants</li>
 		<li>AnimeProtagonist</li>
 		<li>mafia_tete</li>
+		<li>CooperativeWear</li>
+		<li>HarrierWear</li>
       </tags>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
@@ -380,6 +385,7 @@
 			<li>PrussianLandwehrOff</li>
 			<li>FrogmanWear</li> <!-- Michigan J. Frog -->
       </tags>
+	  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
